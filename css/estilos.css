@@ -36,7 +36,10 @@ header{
 	background-color: #93C5FF;
 }
 
-
+.navbar-toggler{
+	border: none;
+	color: #93C5FF;
+}
 
 
 /*estilos al main*/
@@ -778,6 +781,7 @@ footer{
   justify-self: center;
   align-self: center;
   grid-area: staff1;
+  text-align: center;
 }
 
 .staff1 p{
@@ -790,6 +794,7 @@ footer{
   justify-self: center;
   align-self: center;
   grid-area: staff2;
+  text-align: center;
 }
 
 .staff2 p{
@@ -802,6 +807,7 @@ footer{
   justify-self: center;
   align-self: center;
   grid-area: staff3;
+  text-align: center;
 }
 
 .staff3 p{
@@ -814,6 +820,7 @@ footer{
   justify-self: center;
   align-self: center;
   grid-area: staff4;
+  text-align: center;
 }
 
 .staff4 p{
@@ -826,6 +833,7 @@ footer{
   justify-self: center;
   align-self: center;
   grid-area: staff5;
+  text-align: center;
 }
 
 .staff5 p{
@@ -838,6 +846,7 @@ footer{
   justify-self: center;
   align-self: center;
   grid-area: staff6;
+  text-align: center;
 }
 
 .staff6 p{
@@ -850,6 +859,7 @@ footer{
   justify-self: center;
   align-self: center;
   grid-area: staff7;
+  text-align: center;
 }
 
 .staff7 p{
@@ -862,6 +872,7 @@ footer{
   justify-self: center;
   align-self: center;
   grid-area: staff8;
+  text-align: center;
 }
 
 .staff8 p{
