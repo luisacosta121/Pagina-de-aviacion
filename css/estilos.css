@@ -1,0 +1,904 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+}
+
+.body{
+	width: 90%;
+	height: 100%;
+	background-color: grey;
+}
+
+/*estilos al header*/
+
+header{
+	background-color: #93C5FF;
+	width: 100%;
+	position: fixed;
+	height: 75px;
+	margin-top: 0;
+	box-shadow: 0px 2px 50px #000000;
+	z-index: 1000;
+}
+
+.navbar-nav{
+	margin: auto;
+	font-size: 1.1rem;
+}
+
+.navbar-nav a:hover{
+	font-weight: bold;
+}
+
+.navbar{
+	background-color: #93C5FF;
+}
+
+
+
+
+/*estilos al main*/
+
+main{
+	background-color: #ffffff;
+	z-index: -1;
+	padding-top: 75px;
+}
+
+.imagen{
+	width: 100%;
+}
+
+
+
+/*estilos al footer*/
+
+footer{
+	background-color: #0c6cc6;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	color: #ffffff;
+}
+
+.pie1{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.pie1 h3{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.pie1 ul{
+		text-align: center;
+		padding-left: 0;
+}
+
+.pie1 ul li{
+	list-style: none;
+}
+
+.pie1 ul li a{
+	text-decoration: none;
+	line-height: 1.5rem;
+	color: #ffffff;
+}
+
+.pie1 ul li a:hover{
+	color: #ffffff;
+	font-weight: 1000;
+}
+
+.pie2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.pie2 h3{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.pie2 .whatsapp{
+	width: 25px;
+	margin-top: 10px;
+}
+
+.pie2 .mail{
+	width: 25px;
+	margin-top: 10px;
+}
+
+.pie2 .mapa{
+	width: 25px;
+	margin-top: 10px;
+}
+
+.telefono img{
+	display: inline-block;
+}
+
+.telefono p{
+	display: inline-block;
+}
+
+.pie2 .telefono img{
+	margin-top: 0px;
+}
+
+.correoelectronico img{
+	display: inline-block;
+	margin-top: 0px;
+}
+
+.correoelectronico p{
+	display: inline-block;
+}
+
+.pie2 .correoelectronico img{
+	margin-top: 0px;
+}
+
+.direccion img{
+	display: inline-block;
+}
+
+.direccion p{
+	display: inline-block;
+}
+
+.pie2 .direccion img{
+	margin-top: 0px;
+}
+
+.pie3{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.pie3 h3{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.pie3 .instagram{
+	width: 25px;
+}
+
+.pie3 .facebook{
+	width: 25px;
+	margin-left: 10px;
+}
+
+.pie3 .twitter{
+	width: 25px;
+	margin-left: 10px;
+}
+
+/*INICIO de adaptabilidad al footer responsive*/
+
+@media screen and (max-width: 768px){
+	footer{
+		flex-direction: column;
+	}
+
+	.pie1{
+		margin: auto;
+	}
+
+	.pie1 ul{
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.pie2{
+		margin: auto;
+	}
+
+	.pie2 h3{
+		text-align: center;
+		display: none;
+	}
+
+	.pie2 .telefono{
+		text-align: center;
+	}
+
+	.pie2 .telefono img{
+		text-align: center;
+	}
+
+	.pie2 .correoelectronico{
+		text-align: center;
+	}
+
+	.pie2 .correoelectronico img{
+		text-align: center;
+	}
+
+	.pie3{
+		margin: auto;
+	}
+
+	.pie3 h3{
+		text-align: center;
+		display: none;
+	}
+
+	.pie3 .iconredes{
+		text-align: center;
+		margin-bottom: 5px;
+	}
+}
+/*FIN de adaptabilidad al footer responsive*/
+
+/*estilos a preguntas frecuentes*/
+
+.accordion{
+	width: 50%; 
+}
+
+.accordion-item{
+	border: none;
+	padding-left: 25%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.accordion-body{
+	color: #aa00ff;
+}
+
+/*estilos a pagina contacto*/
+
+.formulario form{
+	width: 75%;
+	margin-left: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: #000000;
+}
+
+.mb-3{
+	margin-top: 15px;
+}
+
+.borrar{
+	margin-top: 20px;
+	width: 70px;
+	border-radius: 5%;
+	background-color: #c2c2c2;
+	font-weight: bold;
+}
+
+.enviar{
+	margin-top: 20px;
+	width: 70px;
+	margin-left: 10px;
+	border-radius: 5%;
+	background-color: #c2c2c2;
+	font-weight: bold;
+}
+
+.textarea{
+	width:1000px;
+	height:200px;
+	border: 2px solid #000000;
+	box-shadow: 5px 5px 10px #93C5FF;
+	resize: none;
+}
+
+/*estilos a aerodromo*/
+
+.carousel{
+	width: 75%;
+	margin: auto;
+}
+
+.carousel img{
+	margin: auto;
+	height: 30rem;
+	margin-bottom: 25px;
+}
+
+.parrafoaerodromo{
+	margin: 25px 100px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+.imagenesaerodromo{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.imagenesaerodromo img{
+	width: 20rem;
+	height: 20rem;
+	opacity: 0.8;
+	margin-bottom: 25px;
+}
+
+.imagenesaerodromo img:hover{
+	opacity: 1;
+	box-shadow: 5px 5px 10px #93C5FF;
+	border: 2px solid #93C5FF;
+}
+
+/*INICIO de adaptabilidad a pagina aerodromo responsive*/
+@media screen and (max-width: 768px){
+	.imagenesaerodromo{
+		flex-direction: column;
+}
+	.imagenesaerodromo img{
+		opacity: 1;
+		margin: 10px auto;
+}
+
+	.imagenesaerodromo img:hover{
+		box-shadow: 0px 0px 0px #93C5FF;
+	    border: 0px solid #ffffff;	
+}
+
+	.carousel img{
+		height: 15rem;
+		margin-top: 20px;
+}
+
+}
+
+/*estilos flota y servicios*/
+
+.card{
+	display: inline-block;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+
+.card img{
+	width: 17rem;
+	height: 10rem;
+}
+
+.flota{
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.fichatecnica{
+	width: 90%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.fichatecnica h2{
+	text-align: center;
+}
+
+.containerfichatecnica {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "fotoflota1 	fichaflota1"
+    "fichaflota2 	fotoflota2"
+    "fotoflota3 	fichaflota3"
+    "fichaflota4 	fotoflota4";
+  justify-content: stretch;
+  justify-items: center;
+  align-items: center;  
+}
+
+.fotoflota1 { grid-area: fotoflota1; }
+
+.fichaflota1 { grid-area: fichaflota1; }
+
+.fichaflota2 { grid-area: fichaflota2; }
+
+.fotoflota2 { grid-area: fotoflota2; }
+
+.fotoflota3 { grid-area: fotoflota3; }
+
+.fichaflota3 { grid-area: fichaflota3; }
+
+.fichaflota4 { grid-area: fichaflota4; }
+
+.fotoflota4 { grid-area: fotoflota4; }
+
+.fichatecnica img{
+	width: 40rem;
+	height: 20rem;
+}
+
+/*INICIO de adaptabilidad a pagina flota responsive*/
+@media screen and (max-width: 768px){
+	.containerfichatecnica {  
+		display: grid;
+  		grid-template-columns: 1fr;
+  		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  		grid-template-areas:
+    	"fotoflota1"
+     	"fichaflota1"
+    	"fotoflota2"
+     	"fichaflota2"
+    	"fotoflota3"
+     	"fichaflota3"
+    	"fotoflota4"
+     	"fichaflota4";
+  		justify-content: stretch;
+  		justify-items: center;
+  		align-items: center;  
+}
+
+}
+
+/*estilos sobre nosotros*/
+
+.parrafosobrenosotros{
+	margin: 25px 100px;
+}
+
+/*estilos pagina inicio INDEX*/
+
+.container1 {  
+	display: grid;
+ 	grid-template-columns: 1fr 1fr 1fr 1fr;
+ 	grid-template-rows: 1fr 0.1fr 0.3fr 0.1fr 0.1fr 0.1fr 0.3fr 0.3fr 0.3fr 0.3fr;
+  	grid-auto-columns: 1fr;
+  	grid-auto-rows: 1fr;
+  	gap: 10px 10px;
+  	grid-auto-flow: row;
+  	justify-content: stretch;
+  	justify-items: stretch;
+  	align-items: stretch;
+  	grid-template-areas:
+    "fotoavion 		fotoavion 		fotoavion 		fotoavion"
+    "testimonios 	testimonios 	testimonios 	testimonios"
+    "fototestimonio1 fototestimonio2 fototestimonio3 fototestimonio4"
+    "testimonio1 	testimonio2 	testimonio3 	testimonio4"
+    "valoracion1 	valoracion2 	valoracion3 	valoracion4 "
+    "staff 			staff 			staff 			staff"
+    "fotostaff1 	fotostaff2 		fotostaff3 		fotostaff4"
+    "staff1 		staff2 			staff3 			staff4"
+    "fotostaff5 	fotostaff6 		fotostaff7 		fotostaff8"
+    "staff5 		staff6 			staff7 			staff8";
+}
+
+.fotoavion { 
+	grid-area: fotoavion;
+	justify-self: stretch;
+  	align-self: stretch;
+  	width: 100%;
+}
+
+.testimonios {
+  justify-self: center;
+  align-self: center;
+  grid-area: testimonios;
+}
+.testimonios h2{
+	font-size: 2rem;
+}
+
+.fototestimonio1 {
+  justify-self: center;
+  align-self: center;
+  grid-area: fototestimonio1;
+}
+.fototestimonio1 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	animation-name: fototestimonio;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fototestimonio {
+	0% {border: solid 5px #71c8f9;}
+	50% {border: solid 5px #ffffff;}
+	100% {border: solid 5px #71c8f9;}
+
+	
+}
+
+.fototestimonio2 {
+  justify-self: center;
+  align-self: center;
+  grid-area: fototestimonio2;
+}
+
+.fototestimonio2 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	animation-name: fototestimonio;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.fototestimonio3 {
+  justify-self: center;
+  align-self: center;
+  grid-area: fototestimonio3;
+}
+
+.fototestimonio3 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	animation-name: fototestimonio;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.fototestimonio4 {
+  justify-self: center;
+  align-self: center;
+  grid-area: fototestimonio4;
+}
+
+.fototestimonio4 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	animation-name: fototestimonio;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.testimonio1 {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-area: testimonio1;
+}
+
+.testimonio1 p{
+	font-size: 1.5rem;
+	line-height: 1.2;
+	padding: 10px 20px;
+	font-style: italic;
+}
+
+.testimonio2 {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-area: testimonio2;
+}
+
+.testimonio2 p{
+	font-size: 1.5rem;
+	line-height: 1.2;
+	padding: 10px 20px;
+	font-style: italic;
+}
+
+.testimonio3 {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-area: testimonio3;
+}
+
+.testimonio3 p{
+	font-size: 1.5rem;
+	line-height: 1.2;
+	padding: 10px 20px;
+	font-style: italic;
+}
+
+.testimonio4 {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-area: testimonio4;
+}
+
+.testimonio4 p{
+	font-size: 1.5rem;
+	line-height: 1.2;
+	padding: 10px 20px;
+	font-style: italic;
+}
+
+.valoracion1{
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-area: valoracion1;
+}
+
+.valoracion1 img{
+	width: 50px;
+	padding-bottom: 20px;
+}
+
+.valoracion2{
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-area: valoracion2;	
+}
+
+.valoracion2 img{
+	width: 50px;
+	padding-bottom: 20px;
+}
+
+.valoracion3{
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-area: valoracion3;	
+}
+
+.valoracion3 img{
+	width: 50px;
+	padding-bottom: 20px;
+}
+
+.valoracion4{
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  grid-area: valoracion4;	
+}
+
+.valoracion4 img{
+	width: 50px;
+	padding-bottom: 20px;
+}
+
+.staff {
+  justify-self: center;
+  align-self: center;
+  grid-area: staff;
+}
+
+.staff h2{
+	font-size: 2rem;
+}
+
+.fotostaff1 {
+  justify-self: center;
+  align-self: center;
+  grid-area: fotostaff1;
+}
+
+.fotostaff1 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.fotostaff2 {
+  justify-self: center;
+  align-self: center;
+  grid-area: fotostaff2;
+}
+
+.fotostaff2 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.fotostaff3 {
+  justify-self: center;
+  align-self: center;
+  grid-area: fotostaff3;
+}
+
+.fotostaff3 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.fotostaff4 {
+  justify-self: center;
+  align-self: center;
+  grid-area: fotostaff4;
+}
+
+.fotostaff4 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.fotostaff5 {
+  justify-self: center;
+  align-self: center;
+  grid-area: fotostaff5;
+}
+
+.fotostaff5 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.fotostaff6 {
+  justify-self: center;
+  align-self: center;
+  grid-area: fotostaff6;
+}
+
+.fotostaff6 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.fotostaff7 {
+  justify-self: center;
+  align-self: center;
+  grid-area: fotostaff7;
+}
+
+.fotostaff7 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.fotostaff8 {
+  justify-self: center;
+  align-self: center;
+  grid-area: fotostaff8;
+}
+
+.fotostaff8 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.staff1 {
+  justify-self: center;
+  align-self: center;
+  grid-area: staff1;
+}
+
+.staff1 p{
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding: 10px 20px;
+}
+
+.staff2 {
+  justify-self: center;
+  align-self: center;
+  grid-area: staff2;
+}
+
+.staff2 p{
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding: 10px 20px;
+}
+
+.staff3 {
+  justify-self: center;
+  align-self: center;
+  grid-area: staff3;
+}
+
+.staff3 p{
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding: 10px 20px;
+}
+
+.staff4 {
+  justify-self: center;
+  align-self: center;
+  grid-area: staff4;
+}
+
+.staff4 p{
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding: 10px 20px;
+}
+
+.staff5 {
+  justify-self: center;
+  align-self: center;
+  grid-area: staff5;
+}
+
+.staff5 p{
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding: 10px 20px;
+}
+
+.staff6 {
+  justify-self: center;
+  align-self: center;
+  grid-area: staff6;
+}
+
+.staff6 p{
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding: 10px 20px;
+}
+
+.staff7 {
+  justify-self: center;
+  align-self: center;
+  grid-area: staff7;
+}
+
+.staff7 p{
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding: 10px 20px;
+}
+
+.staff8 {
+  justify-self: center;
+  align-self: center;
+  grid-area: staff8;
+}
+
+.staff8 p{
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding: 10px 20px;
+}
+
+/*INICIO de adaptabilidad al index responsive*/
+@media screen and (max-width: 768px){
+	.container1 {  display: grid;
+  		grid-template-columns: 1fr 1fr;
+  		grid-template-rows: 1fr 0.1fr 0.3fr 0.3fr 0.1fr 0.3fr 0.3fr 0.1fr 0.1fr repeat(8, 0.3fr);
+ 		grid-auto-columns: 1fr;
+  		grid-auto-rows: 1fr;
+ 		gap: 10px 10px;
+ 		grid-auto-flow: row;
+  		justify-content: stretch;
+  		justify-items: stretch;
+  		align-items: stretch;
+  		grid-template-areas:
+    "fotoavion 		fotoavion"
+    "testimonios 	testimonios"
+    "fototestimonio1 fototestimonio2"
+    "testimonio1 	testimonio2"
+    "valoracion1 	valoracion2"
+    "fototestimonio3 fototestimonio4"
+    "testimonio3 	testimonio4"
+    "valoracion3 	valoracion4"
+    "staff			staff"
+    "fotostaff1 	fotostaff2"
+    "staff1 		staff2"
+    "fotostaff3 	fotostaff4"
+    "staff3 		staff4"
+    "fotostaff5 	fotostaff6"
+    "staff5 		staff6"
+    "fotostaff7 	fotostaff8"
+    "staff7 		staff8";
+}
+}
