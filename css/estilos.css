@@ -484,17 +484,91 @@ footer{
 }
 	.containerfichatecnica img{
 		width: 100%;
-
-	
-
 	}
 
 }
 
 /*estilos sobre nosotros*/
 
-.parrafosobrenosotros{
-	margin: 25px 100px;
+.container-sn {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+  "snfotos1 snparrafo1";
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 30px;
+}
+
+.snfotos1 { 
+	grid-area: snfotos1; 
+}
+
+.snparrafo1 { 
+	grid-area: snparrafo1; 
+}
+
+.container-sn img{
+		width: 100%;
+	}
+
+/*INICIO de adaptabilidad a sobre nosotros responsive*/
+
+@media screen and (max-width: 1024px){
+	.container-sn {  
+ 		display: grid;
+ 		grid-template-columns: 1fr;
+  		grid-template-rows: 1fr 1fr;
+  		grid-auto-columns: 1fr;
+  		gap: 0px 0px;
+  		grid-template-areas:
+  		"snfotos1"
+  		"snparrafo1";
+  		margin: 0 auto;
+  		width: 90%;
+  		padding-top: 30px;
+}
+	
+	.snparrafo1{
+		width: 80%;
+	}
+
+	.container-sn img{
+		width: 100%;
+
+	}
+}
+
+@media screen and (max-width: 768px){
+	.container-sn {  
+ 		display: grid;
+ 		grid-template-columns: 1fr;
+  		grid-template-rows: 1fr 1fr;
+  		grid-auto-columns: 1fr;
+  		gap: 0px 0px;
+  		grid-template-areas:
+  		"snfotos1"
+  		"snparrafo1";
+  		margin: 0 auto;
+ 		width: 90%;
+  		padding-top: 30px;
+}
+	
+	.snparrafo1{
+		width: 90%;
+	}
+
+	.container-sn img{
+		width: 100%;
+	}
 }
 
 /*estilos pagina inicio INDEX*/
