@@ -376,9 +376,10 @@ footer{
 }
 
 .fichatecnica{
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	margin-bottom: 50px;
+	padding: 0px 20px;
 }
 
 .fichatecnica h2{
@@ -402,7 +403,9 @@ footer{
     "fichaflota4 	fotoflota4";
   justify-content: stretch;
   justify-items: center;
-  align-items: center;  
+  align-items: center; 
+
+
 }
 
 .fotoflota1 { grid-area: fotoflota1; }
@@ -422,12 +425,12 @@ footer{
 .fotoflota4 { grid-area: fotoflota4; }
 
 .fichatecnica img{
-	width: 40rem;
-	height: 20rem;
+	width: 30rem;
+	height: 15rem;
 }
 
 /*INICIO de adaptabilidad a pagina flota responsive*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
 	.containerfichatecnica {  
 		display: grid;
   		grid-template-columns: 1fr;
@@ -445,6 +448,12 @@ footer{
   		justify-items: center;
   		align-items: center;  
 }
+	.containerfichatecnica img{
+		width: 100%;
+
+	
+
+	}
 
 }
 
