@@ -258,6 +258,10 @@ footer{
 	color: #aa00ff;
 }
 
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff;
+}
+
 /*estilos a pagina contacto*/
 
 .formulario form{
