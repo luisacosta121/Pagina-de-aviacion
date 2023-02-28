@@ -363,8 +363,7 @@ footer{
 	.imagenesaerodromo img{
 		opacity: 1;
 		margin: 10px auto;
-		width: 40vw;
-		height: 30vh;
+		width: 90%;
 }
 
 	.imagenesaerodromo img:hover{
@@ -567,7 +566,8 @@ footer{
 	}
 
 	.container-sn img{
-		width: 100%;
+		width: 100vw;
+		height: 50vh;
 	}
 }
 
