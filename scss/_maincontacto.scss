@@ -1,0 +1,32 @@
+.formulario{
+    form{
+        width: 75%;
+	    margin-left: 50px;
+	    margin-top: 50px;
+	    margin-bottom: 50px;
+	    color: #000000;
+        .mb-3{
+            margin-top: 15px;
+            textarea{
+	            box-shadow: 5px 5px 10px #93C5FF;
+	            resize: vertical;
+                max-height: 150px;
+            }
+        }
+        .borrar{
+            margin-top: 20px;
+	        width: 70px;
+	        border-radius: 5%;
+	        background-color: #c2c2c2;
+	        font-weight: bold;
+        }
+        .enviar{
+            margin-top: 20px;
+	        width: 70px;
+	        margin-left: 10px;
+	        border-radius: 5%;
+	        background-color: #c2c2c2;
+	        font-weight: bold;
+        }
+    }
+}

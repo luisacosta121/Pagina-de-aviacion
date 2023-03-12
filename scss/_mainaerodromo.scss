@@ -1,0 +1,60 @@
+main{
+    .parrafoaerodromo{
+        width: 85%;
+	    line-height: 1.5;
+	    font-size: 1.5rem;
+	    margin: 25px auto;
+    }
+    .parrafoaerodromoresponsive{
+        display: none;
+    }
+
+    .carousel{
+        width: 75%;
+	    margin: auto;
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    margin: auto;
+	                width: 20vw;
+	                height: 70vh;
+	                margin-bottom: 25px;
+                }
+            }
+        }
+        .carousel-control-next-icon{
+            background-image: url("../assets/flechasiguiente.png");
+            width: 50px;
+            height: 50px
+        }
+        .carousel-control-prev-icon{
+            background-image: url("../assets/flechaanterior.png");
+            width: 50px;
+            height: 50px
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    main{
+        .parrafoaerodromo{
+            display: none;
+        }
+        .parrafoaerodromoresponsive{
+            margin: 25px auto;
+		font-size: 1.2rem;
+		line-height: 1.5;
+		display: block;
+		width: 90%;
+        }
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    .d-block{
+                        height: 15rem;
+                    }
+                }
+            }
+        }
+    }
+}

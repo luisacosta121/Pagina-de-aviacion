@@ -1,412 +1,281 @@
 * {
-	margin: 0;
-	padding: 0;
-	font-family: 'Lato', sans-serif;
-	box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box; }
 
-.body{
-	width: 90%;
-	height: 100%;
-	background-color: grey;
-}
+.body {
+  width: 90%;
+  height: 100%;
+  background-color: #ffffff; }
 
-/*estilos al header*/
+header {
+  background-color: #93C5FF;
+  width: 100%;
+  position: fixed;
+  height: 75px;
+  margin-top: 0;
+  box-shadow: 0px 2px 50px #000000;
+  z-index: 1000; }
+  header .navbar {
+    background-color: #93C5FF; }
+    header .navbar .container-fluid .navbar-toggler {
+      border: none;
+      color: #93C5FF; }
+    header .navbar .collapse .navbar-nav {
+      margin: auto;
+      font-size: 1.1rem; }
+      header .navbar .collapse .navbar-nav a:hover {
+        font-weight: bold; }
 
-header{
-	background-color: #93C5FF;
-	width: 100%;
-	position: fixed;
-	height: 75px;
-	margin-top: 0;
-	box-shadow: 0px 2px 50px #000000;
-	z-index: 1000;
-}
-
-.navbar-nav{
-	margin: auto;
-	font-size: 1.1rem;
-}
-
-.navbar-nav a:hover{
-	font-weight: bold;
-}
-
-.navbar{
-	background-color: #93C5FF;
-}
-
-.navbar-toggler{
-	border: none;
-	color: #93C5FF;
-}
-
-
-/*estilos al main*/
-
-main{
-	background-color: #ffffff;
-	z-index: -1;
-	padding-top: 75px;
-}
-
-.imagen{
-	width: 100%;
-}
-
-/*estilos al footer*/
-
-footer{
-	background-color: #0c6cc6;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	color: #ffffff;
-}
-
-.pie1{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.pie1 h3{
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-
-.pie1 ul{
-		text-align: center;
-		padding-left: 0;
-}
-
-.pie1 ul li{
-	list-style: none;
-}
-
-.pie1 ul li a{
-	text-decoration: none;
-	line-height: 1.5rem;
-	color: #ffffff;
-}
-
-.pie1 ul li a:hover{
-	color: #ffffff;
-	font-weight: 1000;
-}
-
-.pie2{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	text-align: center;
-}
-
-.pie2 h3{
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-
-.pie2 .whatsapp{
-	width: 25px;
-	margin-top: 10px;
-}
-
-.pie2 .mail{
-	width: 25px;
-	margin-top: 10px;
-}
-
-.pie2 .mapa{
-	width: 25px;
-	margin-top: 10px;
-}
-
-.telefono img{
-	display: inline-block;
-}
-
-.telefono p{
-	display: inline-block;
-}
-
-.pie2 .telefono img{
-	margin-top: 0px;
-}
-
-.correoelectronico img{
-	display: inline-block;
-	margin-top: 0px;
-}
-
-.correoelectronico p{
-	display: inline-block;
-}
-
-.pie2 .correoelectronico img{
-	margin-top: 0px;
-}
-
-.direccion img{
-	display: inline-block;
-}
-
-.direccion p{
-	display: inline-block;
-}
-
-.pie2 .direccion img{
-	margin-top: 0px;
-}
-
-.pie3{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	text-align: center;
-}
-
-.pie3 h3{
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-
-.pie3 .instagram{
-	width: 25px;
-}
-
-.pie3 .facebook{
-	width: 25px;
-	margin-left: 10px;
-}
-
-.pie3 .twitter{
-	width: 25px;
-	margin-left: 10px;
-}
-
-/*INICIO de adaptabilidad al footer responsive*/
-
-@media screen and (max-width: 768px){
-	footer{
-		flex-direction: column;
-	}
-
-	.pie1{
-		margin: auto;
-	}
-
-	.pie1 ul{
-		text-align: center;
-		padding-left: 0;
-	}
-
-	.pie2{
-		margin: auto;
-	}
-
-	.pie2 h3{
-		text-align: center;
-		display: none;
-	}
-
-	.pie2 .telefono{
-		text-align: center;
-	}
-
-	.pie2 .telefono img{
-		text-align: center;
-	}
-
-	.pie2 .correoelectronico{
-		text-align: center;
-	}
-
-	.pie2 .correoelectronico img{
-		text-align: center;
-	}
-
-	.pie3{
-		margin: auto;
-	}
-
-	.pie3 h3{
-		text-align: center;
-		display: none;
-	}
-
-	.pie3 .iconredes{
-		text-align: center;
-		margin-bottom: 5px;
-	}
-}
-/*FIN de adaptabilidad al footer responsive*/
-
-/*estilos a pagina preguntas frecuentes*/
-
-.accordion{
-	width: 100%; 
-}
-
-.accordion-item{
-	border: none;
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
-
-.accordion-body{
-	color: #aa00ff;
-}
-
-.accordion-button:not(.collapsed) {
+main {
   background-color: #ffffff;
-}
+  z-index: -1;
+  padding-top: 75px; }
+  main .imagen {
+    width: 100%; }
 
-/*FIN de estilos a pagina preguntas frecuentes*/
+footer {
+  background-color: #0c6cc6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #ffffff; }
+  footer .pie1 {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    footer .pie1 h3 {
+      font-size: 1.5rem;
+      font-weight: bold; }
+    footer .pie1 ul {
+      text-align: center;
+      padding-left: 0; }
+      footer .pie1 ul li {
+        list-style: none; }
+        footer .pie1 ul li a {
+          text-decoration: none;
+          line-height: 1.5rem;
+          color: #ffffff; }
+          footer .pie1 ul li a:hover {
+            color: #ffffff;
+            font-weight: 1000; }
+  footer .pie2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; }
+    footer .pie2 h3 {
+      font-size: 1.5rem;
+      font-weight: bold; }
+    footer .pie2 .telefono .whatsapp {
+      width: 25px;
+      margin-top: 10px;
+      display: inline-block;
+      margin-top: 0px; }
+    footer .pie2 .telefono p {
+      display: inline-block; }
+    footer .pie2 .correoelectronico .mail {
+      width: 25px;
+      margin-top: 10px;
+      display: inline-block;
+      margin-top: 0px; }
+    footer .pie2 .correoelectronico p {
+      display: inline-block; }
+    footer .pie2 .direccion .mapa {
+      width: 25px;
+      margin-top: 10px;
+      display: inline-block;
+      margin-top: 0px; }
+    footer .pie2 .direccion p {
+      display: inline-block; }
+  footer .pie3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; }
+    footer .pie3 h3 {
+      font-size: 1.5rem;
+      font-weight: bold; }
+    footer .pie3 .iconredes .instagram {
+      width: 25px; }
+    footer .pie3 .iconredes .facebook {
+      width: 25px;
+      margin-left: 10px; }
+    footer .pie3 .iconredes .twitter {
+      width: 25px;
+      margin-left: 10px; }
 
-/*estilos a pagina contacto*/
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column; }
+    footer .pie1 {
+      margin: auto; }
+      footer .pie1 .pie1 ul {
+        text-align: center;
+        padding-left: 0; }
+    footer .pie2 {
+      margin: auto; }
+      footer .pie2 h3 {
+        text-align: center;
+        display: none; }
+      footer .pie2 .telefono {
+        text-align: center; }
+        footer .pie2 .telefono .img {
+          text-align: center; }
+      footer .pie2 .correoelectronico {
+        text-align: center; }
+        footer .pie2 .correoelectronico img {
+          text-align: center; }
+    footer .pie3 {
+      margin: auto; }
+      footer .pie3 h3 {
+        text-align: center;
+        display: none; }
+      footer .pie3 .iconredes {
+        text-align: center;
+        margin-bottom: 5px; } }
 
-.formulario form{
-	width: 75%;
-	margin-left: 50px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	color: #000000;
-}
+main .accordion {
+  width: 100%; }
+  main .accordion .accordion-item {
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+    main .accordion .accordion-item .accordion-button:not(.collapsed) {
+      background-color: #ffffff; }
+  main .accordion .accordion-body {
+    color: #aa00ff; }
 
-.mb-3{
-	margin-top: 15px;
-}
+.formulario form {
+  width: 75%;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #000000; }
+  .formulario form .mb-3 {
+    margin-top: 15px; }
+    .formulario form .mb-3 textarea {
+      box-shadow: 5px 5px 10px #93C5FF;
+      resize: vertical;
+      max-height: 150px; }
+  .formulario form .borrar {
+    margin-top: 20px;
+    width: 70px;
+    border-radius: 5%;
+    background-color: #c2c2c2;
+    font-weight: bold; }
+  .formulario form .enviar {
+    margin-top: 20px;
+    width: 70px;
+    margin-left: 10px;
+    border-radius: 5%;
+    background-color: #c2c2c2;
+    font-weight: bold; }
 
-.borrar{
-	margin-top: 20px;
-	width: 70px;
-	border-radius: 5%;
-	background-color: #c2c2c2;
-	font-weight: bold;
-}
+main .parrafoaerodromo {
+  width: 85%;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin: 25px auto; }
 
-.enviar{
-	margin-top: 20px;
-	width: 70px;
-	margin-left: 10px;
-	border-radius: 5%;
-	background-color: #c2c2c2;
-	font-weight: bold;
-}
+main .parrafoaerodromoresponsive {
+  display: none; }
 
-.textarea{
-	width:1000px;
-	height:200px;
-	border: 2px solid #000000;
-	box-shadow: 5px 5px 10px #93C5FF;
-	resize: none;
-}
-/*FIN de estilos a pagina contacto*/
+main .carousel {
+  width: 75%;
+  margin: auto; }
+  main .carousel .carousel-inner .carousel-item img {
+    margin: auto;
+    width: 20vw;
+    height: 70vh;
+    margin-bottom: 25px; }
+  main .carousel .carousel-control-next-icon {
+    background-image: url("../assets/flechasiguiente.png");
+    width: 50px;
+    height: 50px; }
+  main .carousel .carousel-control-prev-icon {
+    background-image: url("../assets/flechaanterior.png");
+    width: 50px;
+    height: 50px; }
 
-/*estilos a pagina aerodromo*/
+@media screen and (max-width: 768px) {
+  main .parrafoaerodromo {
+    display: none; }
+  main .parrafoaerodromoresponsive {
+    margin: 25px auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    display: block;
+    width: 90%; }
+  main .carousel .carousel-inner .carousel-item .d-block {
+    height: 15rem; } }
 
-.carousel{
-	width: 75%;
-	margin: auto;
-}
+main .flota {
+  text-align: center;
+  margin-bottom: 45px; }
+  main .flota .card {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    text-align: center; }
+    main .flota .card .card-img-top {
+      width: 17rem;
+      height: 10rem; }
 
-.carousel img{
-	margin: auto;
-	width: 20vw;
-	height: 70vh;
-	margin-bottom: 25px;
-}
+.fichatecnica {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 0px 20px; }
+  .fichatecnica .containerfichatecnica {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas: "fotoflota1 	fichaflota1" "fichaflota2 	fotoflota2" "fotoflota3 	fichaflota3" "fichaflota4 	fotoflota4";
+    justify-content: stretch;
+    justify-items: center;
+    align-items: center; }
+    .fichatecnica .containerfichatecnica img {
+      width: 30rem;
+      height: 15rem; }
+    .fichatecnica .containerfichatecnica h2 {
+      text-align: center; }
+    .fichatecnica .containerfichatecnica .fotoflota1 {
+      grid-area: fotoflota1; }
+    .fichatecnica .containerfichatecnica .fotoflota2 {
+      grid-area: fotoflota2; }
+    .fichatecnica .containerfichatecnica .fotoflota3 {
+      grid-area: fotoflota3; }
+    .fichatecnica .containerfichatecnica .fotoflota4 {
+      grid-area: fotoflota4; }
+    .fichatecnica .containerfichatecnica .fichaflota1 {
+      grid-area: fichaflota1; }
+    .fichatecnica .containerfichatecnica .fichaflota2 {
+      grid-area: fichaflota2; }
+    .fichatecnica .containerfichatecnica .fichaflota3 {
+      grid-area: fichaflota3; }
+    .fichatecnica .containerfichatecnica .fichaflota4 {
+      grid-area: fichaflota4; }
 
-.carousel-control-prev-icon{
-	background-image: url("../assets/flechaanterior.png");
-	width: 50px;
-	height: 50px
-}
+@media screen and (max-width: 1024px) {
+  .fichatecnica .containerfichatecnica {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "fotoflota1" "fichaflota1" "fotoflota2" "fichaflota2" "fotoflota3" "fichaflota3" "fotoflota4" "fichaflota4";
+    justify-content: stretch;
+    justify-items: center;
+    align-items: center; } }
 
-.carousel-control-next-icon{
-	background-image: url("../assets/flechasiguiente.png");
-	width: 50px;
-	height: 50px
-}
-
-.parrafoaerodromo{
-	width: 85%;
-	line-height: 1.5;
-	font-size: 1.5rem;
-	margin: 25px auto;
-}
-
-.parrafoaerodromoresponsive{
-	display: none;
-}
-
-/*INICIO de adaptabilidad a pagina aerodromo responsive*/
-@media screen and (max-width: 768px){
-	.imagenesaerodromo{
-		flex-direction: column;
-}
-	.imagenesaerodromo img{
-		opacity: 1;
-		margin: 10px auto;
-		width: 90%;
-}
-
-	.imagenesaerodromo img:hover{
-		box-shadow: 0px 0px 0px #93C5FF;
-	    border: 0px solid #ffffff;	
-}
-
-	.carousel img{
-		height: 15rem;
-		margin-top: 20px;
-}
-
-	.parrafoaerodromo{
-		display: none;
-}
-
-	.parrafoaerodromoresponsive{
-		margin: 25px auto;
-		font-size: 1.2rem;
-		line-height: 1.5;
-		display: block;
-		width: 90%;
-}
-
-}
-/*FIN de estilos a pagina aerodromo*/
-
-/*estilos flota y servicios*/
-
-.card{
-	display: inline-block;
-	padding: 10px;
-	margin: 10px;
-	text-align: center;
-}
-
-.card img{
-	width: 17rem;
-	height: 10rem;
-}
-
-.flota{
-	text-align: center;
-	margin-bottom: 45px;
-}
-
-.fichatecnica{
-	width: 100%;
-	margin: auto;
-	margin-bottom: 50px;
-	padding: 0px 20px;
-}
-
-.fichatecnica h2{
-	text-align: center;
-}
-
-.containerfichatecnica {  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+main .container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   gap: 10px 10px;
@@ -414,568 +283,347 @@ footer{
   justify-content: stretch;
   justify-items: stretch;
   align-items: stretch;
-  grid-template-areas:
-  "fotoflota1 	fichaflota1"
-  "fichaflota2 	fotoflota2"
-  "fotoflota3 	fichaflota3"
-  "fichaflota4 	fotoflota4";
-  justify-content: stretch;
-  justify-items: center;
-  align-items: center; 
-}
-
-.fotoflota1 { grid-area: fotoflota1; }
-
-.fichaflota1 { grid-area: fichaflota1; }
-
-.fichaflota2 { grid-area: fichaflota2; }
-
-.fotoflota2 { grid-area: fotoflota2; }
-
-.fotoflota3 { grid-area: fotoflota3; }
-
-.fichaflota3 { grid-area: fichaflota3; }
-
-.fichaflota4 { grid-area: fichaflota4; }
-
-.fotoflota4 { grid-area: fotoflota4; }
-
-.fichatecnica img{
-	width: 30rem;
-	height: 15rem;
-}
-
-/*INICIO de adaptabilidad a pagina flota responsive*/
-@media screen and (max-width: 1024px){
-	.containerfichatecnica {  
-		display: grid;
-  		grid-template-columns: 1fr;
-  		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  		grid-template-areas:
-    	"fotoflota1"
-     	"fichaflota1"
-    	"fotoflota2"
-     	"fichaflota2"
-    	"fotoflota3"
-     	"fichaflota3"
-    	"fotoflota4"
-     	"fichaflota4";
-  		justify-content: stretch;
-  		justify-items: center;
-  		align-items: center;  
-}
-	.containerfichatecnica img{
-		width: 100%;
-	}
-
-}
-/*FIN de estilos a pagina flota*/
-
-/*estilos pagina inicio INDEX*/
-
-.container1 {  
-	display: grid;
- 	grid-template-columns: 1fr 1fr 1fr 1fr;
- 	grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
-  	grid-auto-columns: 1fr;
-  	grid-auto-rows: 1fr;
-  	gap: 10px 10px;
-  	grid-auto-flow: row;
-  	justify-content: stretch;
-  	justify-items: stretch;
-  	align-items: stretch;
-  	grid-template-areas:
-    "fotoavion 		fotoavion 		fotoavion 		fotoavion"
-	"parrafosn 		parrafosn		parrafosn		parrafosn"
-    "testimonios 	testimonios 	testimonios 	testimonios"
-    "fototestimonio1 fototestimonio2 fototestimonio3 fototestimonio4"
-    "testimonio1 	testimonio2 	testimonio3 	testimonio4"
-    "valoracion1 	valoracion2 	valoracion3 	valoracion4 "
-    "staff 			staff 			staff 			staff"
-    "fotostaff1 	fotostaff2 		fotostaff3 		fotostaff4"
-    "staff1 		staff2 			staff3 			staff4"
-    "fotostaff5 	fotostaff6 		fotostaff7 		fotostaff8"
-    "staff5 		staff6 			staff7 			staff8";
-}
-
-.fotoavion { 
-	grid-area: fotoavion;
-	justify-self: stretch;
-  	align-self: stretch;
-  	width: 100%;
-}
-
-.parrafosn {
-	width: 85%;
-	line-height: 1.5;
-	font-size: 1.5rem;
-	margin: 25px auto;
-	justify-self: center;
-	align-self: center;
-	grid-area: parrafosn;
-  }
-  
-.testimonios {
-  justify-self: center;
-  align-self: center;
-  grid-area: testimonios;
-}
-.testimonios h2{
-	font-size: 2rem;
-}
-
-.fototestimonio1 {
-  justify-self: center;
-  align-self: center;
-  grid-area: fototestimonio1;
-}
-.fototestimonio1 img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	animation-name: fototestimonio;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-
-@keyframes fototestimonio {
-	0% {border: solid 5px #71c8f9;}
-	50% {border: solid 5px #ffffff;}
-	100% {border: solid 5px #71c8f9;}
-}
-
-.fototestimonio2 {
-  justify-self: center;
-  align-self: center;
-  grid-area: fototestimonio2;
-}
-
-.fototestimonio2 img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	animation-name: fototestimonio;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-
-.fototestimonio3 {
-  justify-self: center;
-  align-self: center;
-  grid-area: fototestimonio3;
-}
-
-.fototestimonio3 img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	animation-name: fototestimonio;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-
-.fototestimonio4 {
-  justify-self: center;
-  align-self: center;
-  grid-area: fototestimonio4;
-}
-
-.fototestimonio4 img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	animation-name: fototestimonio;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-
-.testimonio1 {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-  grid-area: testimonio1;
-}
-
-.testimonio1 p{
-	font-size: 1.5rem;
-	line-height: 1.2;
-	padding: 10px 20px;
-	font-style: italic;
-}
-
-.testimonio2 {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-  grid-area: testimonio2;
-}
-
-.testimonio2 p{
-	font-size: 1.5rem;
-	line-height: 1.2;
-	padding: 10px 20px;
-	font-style: italic;
-}
-
-.testimonio3 {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-  grid-area: testimonio3;
-}
-
-.testimonio3 p{
-	font-size: 1.5rem;
-	line-height: 1.2;
-	padding: 10px 20px;
-	font-style: italic;
-}
-
-.testimonio4 {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-  grid-area: testimonio4;
-}
-
-.testimonio4 p{
-	font-size: 1.5rem;
-	line-height: 1.2;
-	padding: 10px 20px;
-	font-style: italic;
-}
-
-.valoracion1{
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-  grid-area: valoracion1;
-}
-
-.valoracion1 img{
-	width: 50px;
-	padding-bottom: 20px;
-}
-
-.valoracion2{
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-  grid-area: valoracion2;	
-}
-
-.valoracion2 img{
-	width: 50px;
-	padding-bottom: 20px;
-}
-
-.valoracion3{
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-  grid-area: valoracion3;	
-}
-
-.valoracion3 img{
-	width: 50px;
-	padding-bottom: 20px;
-}
-
-.valoracion4{
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-  grid-area: valoracion4;	
-}
-
-.valoracion4 img{
-	width: 50px;
-	padding-bottom: 20px;
-}
-
-.staff {
-  justify-self: center;
-  align-self: center;
-  grid-area: staff;
-}
-
-.staff h2{
-	font-size: 2rem;
-}
-
-.fotostaff1 {
-  justify-self: center;
-  align-self: center;
-  grid-area: fotostaff1;
-}
-
-.fotostaff1 img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	animation-name: fotostaff;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-
-.fotostaff2 {
-  justify-self: center;
-  align-self: center;
-  grid-area: fotostaff2;
-}
-
-.fotostaff2 img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	animation-name: fotostaff;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-
-.fotostaff3 {
-  justify-self: center;
-  align-self: center;
-  grid-area: fotostaff3;
-}
-
-.fotostaff3 img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	animation-name: fotostaff;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-
-.fotostaff4 {
-  justify-self: center;
-  align-self: center;
-  grid-area: fotostaff4;
-}
-
-.fotostaff4 img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	animation-name: fotostaff;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-
-.fotostaff5 {
-  justify-self: center;
-  align-self: center;
-  grid-area: fotostaff5;
-}
-
-.fotostaff5 img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	animation-name: fotostaff;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-
-.fotostaff6 {
-  justify-self: center;
-  align-self: center;
-  grid-area: fotostaff6;
-}
-
-.fotostaff6 img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	animation-name: fotostaff;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-
-.fotostaff7 {
-  justify-self: center;
-  align-self: center;
-  grid-area: fotostaff7;
-}
-
-.fotostaff7 img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	animation-name: fotostaff;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-
-.fotostaff8 {
-  justify-self: center;
-  align-self: center;
-  grid-area: fotostaff8;
-}
-
-.fotostaff8 img{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	animation-name: fotostaff;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
+  grid-template-areas: "fotoavion 		fotoavion 		fotoavion 		fotoavion" "parrafosn 		parrafosn		parrafosn		parrafosn" "testimonios 	testimonios 	testimonios 	testimonios" "fototestimonio1 fototestimonio2 fototestimonio3 fototestimonio4" "testimonio1 	testimonio2 	testimonio3 	testimonio4" "valoracion1 	valoracion2 	valoracion3 	valoracion4 " "staff 			staff 			staff 			staff" "fotostaff1 	fotostaff2 		fotostaff3 		fotostaff4" "staff1 		staff2 			staff3 			staff4" "fotostaff5 	fotostaff6 		fotostaff7 		fotostaff8" "staff5 		staff6 			staff7 			staff8"; }
+  main .container1 .fotoavion {
+    grid-area: fotoavion;
+    justify-self: stretch;
+    align-self: stretch;
+    width: 100%; }
+  main .container1 .parrafosn {
+    width: 85%;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin: 25px auto;
+    justify-self: center;
+    align-self: center;
+    grid-area: parrafosn; }
+  main .container1 .testimonios {
+    justify-self: center;
+    align-self: center;
+    grid-area: testimonios; }
+    main .container1 .testimonios h2 {
+      font-size: 2rem; }
+  main .container1 .fototestimonio1 {
+    justify-self: center;
+    align-self: center;
+    grid-area: fototestimonio1; }
+    main .container1 .fototestimonio1 img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      animation-name: fototestimonio;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+  main .container1 .fototestimonio2 {
+    justify-self: center;
+    align-self: center;
+    grid-area: fototestimonio2; }
+    main .container1 .fototestimonio2 img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      animation-name: fototestimonio;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+  main .container1 .fototestimonio3 {
+    justify-self: center;
+    align-self: center;
+    grid-area: fototestimonio3; }
+    main .container1 .fototestimonio3 img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      animation-name: fototestimonio;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+  main .container1 .fototestimonio4 {
+    justify-self: center;
+    align-self: center;
+    grid-area: fototestimonio4; }
+    main .container1 .fototestimonio4 img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      animation-name: fototestimonio;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+  main .container1 .testimonio1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-area: testimonio1; }
+    main .container1 .testimonio1 p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      padding: 10px 20px;
+      font-style: italic; }
+  main .container1 .testimonio2 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-area: testimonio2; }
+    main .container1 .testimonio2 p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      padding: 10px 20px;
+      font-style: italic; }
+  main .container1 .testimonio3 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-area: testimonio3; }
+    main .container1 .testimonio3 p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      padding: 10px 20px;
+      font-style: italic; }
+  main .container1 .testimonio4 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-area: testimonio4; }
+    main .container1 .testimonio4 p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      padding: 10px 20px;
+      font-style: italic; }
+  main .container1 .valoracion1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-area: valoracion1; }
+    main .container1 .valoracion1 img {
+      width: 50px;
+      padding-bottom: 20px; }
+  main .container1 .valoracion2 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-area: valoracion2; }
+    main .container1 .valoracion2 img {
+      width: 50px;
+      padding-bottom: 20px; }
+  main .container1 .valoracion3 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-area: valoracion3; }
+    main .container1 .valoracion3 img {
+      width: 50px;
+      padding-bottom: 20px; }
+  main .container1 .valoracion4 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-area: valoracion4; }
+    main .container1 .valoracion4 img {
+      width: 50px;
+      padding-bottom: 20px; }
+  main .container1 .staff {
+    justify-self: center;
+    align-self: center;
+    grid-area: staff; }
+    main .container1 .staff h2 {
+      font-size: 2rem; }
+  main .container1 .fotostaff1 {
+    justify-self: center;
+    align-self: center;
+    grid-area: fotostaff1; }
+    main .container1 .fotostaff1 img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      animation-name: fotostaff;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+  main .container1 .fotostaff2 {
+    justify-self: center;
+    align-self: center;
+    grid-area: fotostaff2; }
+    main .container1 .fotostaff2 img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      animation-name: fotostaff;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+  main .container1 .fotostaff3 {
+    justify-self: center;
+    align-self: center;
+    grid-area: fotostaff3; }
+    main .container1 .fotostaff3 img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      animation-name: fotostaff;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+  main .container1 .fotostaff4 {
+    justify-self: center;
+    align-self: center;
+    grid-area: fotostaff4; }
+    main .container1 .fotostaff4 img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      animation-name: fotostaff;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+  main .container1 .fotostaff5 {
+    justify-self: center;
+    align-self: center;
+    grid-area: fotostaff5; }
+    main .container1 .fotostaff5 img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      animation-name: fotostaff;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+  main .container1 .fotostaff6 {
+    justify-self: center;
+    align-self: center;
+    grid-area: fotostaff6; }
+    main .container1 .fotostaff6 img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      animation-name: fotostaff;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+  main .container1 .fotostaff7 {
+    justify-self: center;
+    align-self: center;
+    grid-area: fotostaff7; }
+    main .container1 .fotostaff7 img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      animation-name: fotostaff;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+  main .container1 .fotostaff8 {
+    justify-self: center;
+    align-self: center;
+    grid-area: fotostaff8; }
+    main .container1 .fotostaff8 img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      animation-name: fotostaff;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+  main .container1 .staff1 {
+    justify-self: center;
+    align-self: center;
+    grid-area: staff1;
+    text-align: center; }
+    main .container1 .staff1 p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      padding: 10px 20px; }
+  main .container1 .staff2 {
+    justify-self: center;
+    align-self: center;
+    grid-area: staff2;
+    text-align: center; }
+    main .container1 .staff2 p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      padding: 10px 20px; }
+  main .container1 .staff3 {
+    justify-self: center;
+    align-self: center;
+    grid-area: staff3;
+    text-align: center; }
+    main .container1 .staff3 p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      padding: 10px 20px; }
+  main .container1 .staff4 {
+    justify-self: center;
+    align-self: center;
+    grid-area: staff4;
+    text-align: center; }
+    main .container1 .staff4 p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      padding: 10px 20px; }
+  main .container1 .staff5 {
+    justify-self: center;
+    align-self: center;
+    grid-area: staff5;
+    text-align: center; }
+    main .container1 .staff5 p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      padding: 10px 20px; }
+  main .container1 .staff6 {
+    justify-self: center;
+    align-self: center;
+    grid-area: staff6;
+    text-align: center; }
+    main .container1 .staff6 p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      padding: 10px 20px; }
+  main .container1 .staff7 {
+    justify-self: center;
+    align-self: center;
+    grid-area: staff7;
+    text-align: center; }
+    main .container1 .staff7 p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      padding: 10px 20px; }
+  main .container1 .staff8 {
+    justify-self: center;
+    align-self: center;
+    grid-area: staff8;
+    text-align: center; }
+    main .container1 .staff8 p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      padding: 10px 20px; }
 
 @keyframes fotostaff {
-	0% {border: solid 5px #ff5850;}
-	50% {border: solid 5px #ffffff;}
-	100% {border: solid 5px #ff5850;}
-}
+  0% {
+    border: solid 5px #ff5850; }
+  50% {
+    border: solid 5px #ffffff; }
+  100% {
+    border: solid 5px #ff5850; } }
 
-.staff1 {
-  justify-self: center;
-  align-self: center;
-  grid-area: staff1;
-  text-align: center;
-}
+@keyframes fototestimonio {
+  0% {
+    border: solid 5px #71c8f9; }
+  50% {
+    border: solid 5px #ffffff; }
+  100% {
+    border: solid 5px #71c8f9; } }
 
-.staff1 p{
-  font-size: 1.5rem;
-  line-height: 1.2;
-  padding: 10px 20px;
-}
-
-.staff2 {
-  justify-self: center;
-  align-self: center;
-  grid-area: staff2;
-  text-align: center;
-}
-
-.staff2 p{
-  font-size: 1.5rem;
-  line-height: 1.2;
-  padding: 10px 20px;
-}
-
-.staff3 {
-  justify-self: center;
-  align-self: center;
-  grid-area: staff3;
-  text-align: center;
-}
-
-.staff3 p{
-  font-size: 1.5rem;
-  line-height: 1.2;
-  padding: 10px 20px;
-}
-
-.staff4 {
-  justify-self: center;
-  align-self: center;
-  grid-area: staff4;
-  text-align: center;
-}
-
-.staff4 p{
-  font-size: 1.5rem;
-  line-height: 1.2;
-  padding: 10px 20px;
-}
-
-.staff5 {
-  justify-self: center;
-  align-self: center;
-  grid-area: staff5;
-  text-align: center;
-}
-
-.staff5 p{
-  font-size: 1.5rem;
-  line-height: 1.2;
-  padding: 10px 20px;
-}
-
-.staff6 {
-  justify-self: center;
-  align-self: center;
-  grid-area: staff6;
-  text-align: center;
-}
-
-.staff6 p{
-  font-size: 1.5rem;
-  line-height: 1.2;
-  padding: 10px 20px;
-}
-
-.staff7 {
-  justify-self: center;
-  align-self: center;
-  grid-area: staff7;
-  text-align: center;
-}
-
-.staff7 p{
-  font-size: 1.5rem;
-  line-height: 1.2;
-  padding: 10px 20px;
-}
-
-.staff8 {
-  justify-self: center;
-  align-self: center;
-  grid-area: staff8;
-  text-align: center;
-}
-
-.staff8 p{
-  font-size: 1.5rem;
-  line-height: 1.2;
-  padding: 10px 20px;
-}
-
-/*INICIO de adaptabilidad al index responsive*/
-@media screen and (max-width: 768px){
-	.container1 {  display: grid;
-  		grid-template-columns: 1fr 1fr;
-  		grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr repeat(8, 0.1fr);
- 		grid-auto-columns: 1fr;
-  		grid-auto-rows: 1fr;
- 		gap: 10px 10px;
- 		grid-auto-flow: row;
-  		justify-content: stretch;
-  		justify-items: stretch;
-  		align-items: stretch;
-  		grid-template-areas:
-    "fotoavion 		fotoavion"
-	"parrafosn		parrafosn"
-    "testimonios 	testimonios"
-    "fototestimonio1 fototestimonio2"
-    "testimonio1 	testimonio2"
-    "valoracion1 	valoracion2"
-    "fototestimonio3 fototestimonio4"
-    "testimonio3 	testimonio4"
-    "valoracion3 	valoracion4"
-    "staff			staff"
-    "fotostaff1 	fotostaff2"
-    "staff1 		staff2"
-    "fotostaff3 	fotostaff4"
-    "staff3 		staff4"
-    "fotostaff5 	fotostaff6"
-    "staff5 		staff6"
-    "fotostaff7 	fotostaff8"
-    "staff7 		staff8";
-}
-}
-/*FIN de estilos a pagina inicio INDEX*/
+@media screen and (max-width: 768px) {
+  main .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(18, 0.1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas: "fotoavion 		fotoavion" "parrafosn		parrafosn" "testimonios 	testimonios" "fototestimonio1 fototestimonio2" "testimonio1 	testimonio2" "valoracion1 	valoracion2" "fototestimonio3 fototestimonio4" "testimonio3 	testimonio4" "valoracion3 	valoracion4" "staff			staff" "fotostaff1 	fotostaff2" "staff1 		staff2" "fotostaff3 	fotostaff4" "staff3 		staff4" "fotostaff5 	fotostaff6" "staff5 		staff6" "fotostaff7 	fotostaff8" "staff7 		staff8"; } }

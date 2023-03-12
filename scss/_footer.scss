@@ -1,0 +1,139 @@
+footer{
+    background-color: #0c6cc6;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	color: #ffffff;
+    .pie1{
+        margin-top: 20px;
+	    margin-bottom: 20px;
+        h3{
+            font-size: 1.5rem;
+	        font-weight: bold;
+        }
+        ul{
+            text-align: center;
+            padding-left: 0;
+            li {
+                list-style: none;
+                a{
+                    text-decoration: none;
+	                line-height: 1.5rem;
+	                color: #ffffff;
+                    &:hover{
+                        color: #ffffff;
+	                    font-weight: 1000;
+                    }
+                }
+            }
+        }
+    }
+    .pie2{
+        margin-top: 20px;
+	    margin-bottom: 20px;
+	    text-align: center;
+        h3{
+            font-size: 1.5rem;
+	        font-weight: bold;
+        }
+        .telefono{
+            .whatsapp{
+                width: 25px;
+	            margin-top: 10px;
+                display: inline-block;
+                margin-top: 0px;
+            }
+            p{
+                display: inline-block;
+            }
+        }
+        .correoelectronico{
+            .mail{
+                width: 25px;
+	            margin-top: 10px;
+                display: inline-block;
+	            margin-top: 0px;
+            }
+            p{
+                display: inline-block;
+            }
+        }
+        .direccion{
+            .mapa{
+                    width: 25px;
+	                margin-top: 10px;
+                    display: inline-block;
+                    margin-top: 0px;
+            }
+            p{
+                    display: inline-block;
+            }
+            }
+        
+    }
+    .pie3{
+        margin-top: 20px;
+	    margin-bottom: 20px;
+	    text-align: center;
+        h3{
+            font-size: 1.5rem;
+	        font-weight: bold;
+        }
+        .iconredes{
+            .instagram{
+                width: 25px;
+            }
+            .facebook{
+                width: 25px;
+	            margin-left: 10px;
+            }
+            .twitter{
+                width: 25px;
+	            margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        flex-direction: column;
+        .pie1{
+            margin: auto;
+            .pie1 ul{
+                text-align: center;
+		        padding-left: 0;
+            }
+        }
+        .pie2{
+            margin: auto;
+            h3{
+                text-align: center;
+		        display: none;
+            }
+            .telefono{
+                text-align: center;
+                .img{
+                    text-align: center;
+                }
+            }
+            .correoelectronico{
+                text-align: center;
+                img{
+                    text-align: center;
+                }
+            }
+        }
+        .pie3{
+            margin: auto;
+            h3{
+                text-align: center;
+		        display: none;
+            }
+            .iconredes{
+                text-align: center;
+		margin-bottom: 5px;
+            }
+        }
+    }
+}

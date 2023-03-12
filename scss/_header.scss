@@ -1,0 +1,27 @@
+header{
+    background-color: #93C5FF;
+	width: 100%;
+	position: fixed;
+	height: 75px;
+	margin-top: 0;
+	box-shadow: 0px 2px 50px #000000;
+	z-index: 1000;
+    .navbar{
+        background-color: #93C5FF;
+        .container-fluid{
+            .navbar-toggler{
+                border: none;
+	            color: #93C5FF;
+            }
+        }
+        .collapse{
+            .navbar-nav{
+                margin: auto;
+	            font-size: 1.1rem;
+                a:hover{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

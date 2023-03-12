@@ -1,0 +1,16 @@
+main{
+    .accordion{
+        width: 100%;
+        .accordion-item{
+            border: none;
+	        margin-top: 15px;
+	        margin-bottom: 15px;
+            .accordion-button:not(.collapsed){
+                background-color: #ffffff;
+            }
+        }
+        .accordion-body{
+            color: #aa00ff;
+        }
+    }
+}
