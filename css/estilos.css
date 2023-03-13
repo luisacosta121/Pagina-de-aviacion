@@ -33,7 +33,8 @@ main {
   z-index: -1;
   padding-top: 75px; }
   main .imagen {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
 
 footer {
   background-color: #0c6cc6;
@@ -68,6 +69,7 @@ footer {
       font-weight: bold; }
     footer .pie2 .telefono .whatsapp {
       width: 25px;
+      height: 25px;
       margin-top: 10px;
       display: inline-block;
       margin-top: 0px; }
@@ -75,6 +77,7 @@ footer {
       display: inline-block; }
     footer .pie2 .correoelectronico .mail {
       width: 25px;
+      height: 25px;
       margin-top: 10px;
       display: inline-block;
       margin-top: 0px; }
@@ -82,6 +85,7 @@ footer {
       display: inline-block; }
     footer .pie2 .direccion .mapa {
       width: 25px;
+      height: 25px;
       margin-top: 10px;
       display: inline-block;
       margin-top: 0px; }
@@ -95,12 +99,15 @@ footer {
       font-size: 1.5rem;
       font-weight: bold; }
     footer .pie3 .iconredes .instagram {
-      width: 25px; }
+      width: 25px;
+      height: 25px; }
     footer .pie3 .iconredes .facebook {
       width: 25px;
+      height: 25px;
       margin-left: 10px; }
     footer .pie3 .iconredes .twitter {
       width: 25px;
+      height: 25px;
       margin-left: 10px; }
 
 @media screen and (max-width: 768px) {
@@ -133,68 +140,158 @@ footer {
         text-align: center;
         margin-bottom: 5px; } }
 
-main .accordion {
+.accordion {
   width: 100%; }
-  main .accordion .accordion-item {
+  .accordion .accordion-item {
     border: none;
     margin-top: 15px;
     margin-bottom: 15px; }
-    main .accordion .accordion-item .accordion-button:not(.collapsed) {
+    .accordion .accordion-item .accordion-button:not(.collapsed) {
       background-color: #ffffff; }
-  main .accordion .accordion-body {
+  .accordion .accordion-body {
     color: #aa00ff; }
 
-.formulario form {
-  width: 75%;
-  margin-left: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  color: #000000; }
-  .formulario form .mb-3 {
-    margin-top: 15px; }
-    .formulario form .mb-3 textarea {
-      box-shadow: 5px 5px 10px #93C5FF;
-      resize: vertical;
-      max-height: 150px; }
-  .formulario form .borrar {
-    margin-top: 20px;
-    width: 70px;
+.contacto .formulario {
+  background-color: #93C5FF;
+  width: 50%;
+  margin: 10px auto;
+  padding: 1px 1px;
+  filter: grayscale(100%);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s; }
+  .contacto .formulario:hover {
     border-radius: 5%;
-    background-color: #c2c2c2;
-    font-weight: bold; }
-  .formulario form .enviar {
-    margin-top: 20px;
-    width: 70px;
-    margin-left: 10px;
-    border-radius: 5%;
-    background-color: #c2c2c2;
-    font-weight: bold; }
+    filter: grayscale(0%);
+    transition-duration: 1s;
+    transition-timing-function: linear; }
+  .contacto .formulario form {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #000000; }
+    .contacto .formulario form .mb-3 {
+      margin-top: 15px; }
+      .contacto .formulario form .mb-3 textarea {
+        box-shadow: 5px 5px 10px #93C5FF;
+        resize: vertical;
+        max-height: 150px; }
+    .contacto .formulario form .borrar {
+      margin-top: 20px;
+      width: 150px;
+      height: 50px;
+      background-color: #940000;
+      color: #ffffff; }
+      .contacto .formulario form .borrar:hover {
+        background-image: linear-gradient(200deg, #940000, #c90000, #940000, #c90000, #940000, #c90000);
+        background-size: auto 210%;
+        background-position: 0 100%;
+        transition: background-position 1s; }
+    .contacto .formulario form .enviar {
+      margin-top: 20px;
+      width: 150px;
+      height: 50px;
+      background-color: #003b94;
+      color: #ffffff; }
+      .contacto .formulario form .enviar:hover {
+        background-image: linear-gradient(200deg, #003b94, #0050c8, #003b94, #0050c8, #003b94, #0050c8);
+        background-size: auto 210%;
+        background-position: 0 100%;
+        transition: background-position 1s; }
 
-main .parrafoaerodromo {
+@media screen and (max-width: 768px) {
+  .contacto .formulario {
+    background-color: #93C5FF;
+    width: 90%;
+    margin: 5px auto;
+    padding: 1px 1px;
+    filter: grayscale(0%);
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s; }
+    .contacto .formulario:hover {
+      border-radius: 0%;
+      filter: grayscale(0%);
+      transition-duration: 0s;
+      transition-timing-function: linear; }
+    .contacto .formulario form {
+      width: 75%;
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      color: #000000; }
+      .contacto .formulario form .mb-3 {
+        margin-top: 15px; }
+        .contacto .formulario form .mb-3 textarea {
+          box-shadow: 5px 5px 10px #93C5FF;
+          resize: vertical;
+          max-height: 150px; }
+      .contacto .formulario form .borrar {
+        margin-top: 20px;
+        width: 150px;
+        height: 50px;
+        background-color: #940000;
+        color: #ffffff; }
+        .contacto .formulario form .borrar:hover {
+          background-image: none;
+          background-size: auto 210%;
+          background-position: 0 100%;
+          transition: background-position 0s; }
+      .contacto .formulario form .enviar {
+        margin-top: 20px;
+        width: 150px;
+        height: 50px;
+        background-color: #003b94;
+        color: #ffffff; }
+        .contacto .formulario form .enviar:hover {
+          background-image: none;
+          background-size: auto 210%;
+          background-position: 0 100%;
+          transition: background-position 0s; } }
+
+.parrafoaerodromo {
   width: 85%;
   line-height: 1.5;
   font-size: 1.5rem;
   margin: 25px auto; }
 
-main .parrafoaerodromoresponsive {
+.parrafoaerodromoresponsive {
   display: none; }
 
-main .carousel {
-  width: 75%;
-  margin: auto; }
-  main .carousel .carousel-inner .carousel-item img {
-    margin: auto;
-    width: 20vw;
-    height: 70vh;
-    margin-bottom: 25px; }
-  main .carousel .carousel-control-next-icon {
-    background-image: url("../assets/flechasiguiente.png");
-    width: 50px;
-    height: 50px; }
-  main .carousel .carousel-control-prev-icon {
-    background-image: url("../assets/flechaanterior.png");
-    width: 50px;
-    height: 50px; }
+img {
+  width: 100%;
+  height: 500px; }
+
+.containeraerodromo {
+  margin: auto;
+  width: 85%;
+  display: flex;
+  margin-bottom: 30px; }
+
+.card_aerodromo {
+  flex: 1;
+  overflow: hidden;
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -ms-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s; }
+
+.card_aerodromo:hover {
+  transition: all 2s;
+  flex: 6; }
+
+.card_aerodromo img {
+  object-fit: cover;
+  filter: grayscale(1); }
+
+.card_aerodromo:hover img {
+  filter: none; }
 
 @media screen and (max-width: 768px) {
   main .parrafoaerodromo {
@@ -205,18 +302,18 @@ main .carousel {
     line-height: 1.5;
     display: block;
     width: 90%; }
-  main .carousel .carousel-inner .carousel-item .d-block {
-    height: 15rem; } }
+  main .containeraerodromo {
+    display: none; } }
 
-main .flota {
+.flota {
   text-align: center;
   margin-bottom: 45px; }
-  main .flota .card {
+  .flota .card {
     display: inline-block;
     padding: 10px;
     margin: 10px;
     text-align: center; }
-    main .flota .card .card-img-top {
+    .flota .card .card-img-top {
       width: 17rem;
       height: 10rem; }
 
@@ -272,7 +369,7 @@ main .flota {
     justify-items: center;
     align-items: center; } }
 
-main .container1 {
+.container1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
@@ -284,12 +381,12 @@ main .container1 {
   justify-items: stretch;
   align-items: stretch;
   grid-template-areas: "fotoavion 		fotoavion 		fotoavion 		fotoavion" "parrafosn 		parrafosn		parrafosn		parrafosn" "testimonios 	testimonios 	testimonios 	testimonios" "fototestimonio1 fototestimonio2 fototestimonio3 fototestimonio4" "testimonio1 	testimonio2 	testimonio3 	testimonio4" "valoracion1 	valoracion2 	valoracion3 	valoracion4 " "staff 			staff 			staff 			staff" "fotostaff1 	fotostaff2 		fotostaff3 		fotostaff4" "staff1 		staff2 			staff3 			staff4" "fotostaff5 	fotostaff6 		fotostaff7 		fotostaff8" "staff5 		staff6 			staff7 			staff8"; }
-  main .container1 .fotoavion {
+  .container1 .fotoavion {
     grid-area: fotoavion;
     justify-self: stretch;
     align-self: stretch;
     width: 100%; }
-  main .container1 .parrafosn {
+  .container1 .parrafosn {
     width: 85%;
     line-height: 1.5;
     font-size: 1.5rem;
@@ -297,17 +394,17 @@ main .container1 {
     justify-self: center;
     align-self: center;
     grid-area: parrafosn; }
-  main .container1 .testimonios {
+  .container1 .testimonios {
     justify-self: center;
     align-self: center;
     grid-area: testimonios; }
-    main .container1 .testimonios h2 {
+    .container1 .testimonios h2 {
       font-size: 2rem; }
-  main .container1 .fototestimonio1 {
+  .container1 .fototestimonio1 {
     justify-self: center;
     align-self: center;
     grid-area: fototestimonio1; }
-    main .container1 .fototestimonio1 img {
+    .container1 .fototestimonio1 img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -315,11 +412,11 @@ main .container1 {
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite; }
-  main .container1 .fototestimonio2 {
+  .container1 .fototestimonio2 {
     justify-self: center;
     align-self: center;
     grid-area: fototestimonio2; }
-    main .container1 .fototestimonio2 img {
+    .container1 .fototestimonio2 img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -327,11 +424,11 @@ main .container1 {
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite; }
-  main .container1 .fototestimonio3 {
+  .container1 .fototestimonio3 {
     justify-self: center;
     align-self: center;
     grid-area: fototestimonio3; }
-    main .container1 .fototestimonio3 img {
+    .container1 .fototestimonio3 img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -339,11 +436,11 @@ main .container1 {
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite; }
-  main .container1 .fototestimonio4 {
+  .container1 .fototestimonio4 {
     justify-self: center;
     align-self: center;
     grid-area: fototestimonio4; }
-    main .container1 .fototestimonio4 img {
+    .container1 .fototestimonio4 img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -351,89 +448,93 @@ main .container1 {
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite; }
-  main .container1 .testimonio1 {
+  .container1 .testimonio1 {
     justify-self: center;
     align-self: center;
     text-align: center;
     grid-area: testimonio1; }
-    main .container1 .testimonio1 p {
+    .container1 .testimonio1 p {
       font-size: 1.5rem;
       line-height: 1.2;
       padding: 10px 20px;
       font-style: italic; }
-  main .container1 .testimonio2 {
+  .container1 .testimonio2 {
     justify-self: center;
     align-self: center;
     text-align: center;
     grid-area: testimonio2; }
-    main .container1 .testimonio2 p {
+    .container1 .testimonio2 p {
       font-size: 1.5rem;
       line-height: 1.2;
       padding: 10px 20px;
       font-style: italic; }
-  main .container1 .testimonio3 {
+  .container1 .testimonio3 {
     justify-self: center;
     align-self: center;
     text-align: center;
     grid-area: testimonio3; }
-    main .container1 .testimonio3 p {
+    .container1 .testimonio3 p {
       font-size: 1.5rem;
       line-height: 1.2;
       padding: 10px 20px;
       font-style: italic; }
-  main .container1 .testimonio4 {
+  .container1 .testimonio4 {
     justify-self: center;
     align-self: center;
     text-align: center;
     grid-area: testimonio4; }
-    main .container1 .testimonio4 p {
+    .container1 .testimonio4 p {
       font-size: 1.5rem;
       line-height: 1.2;
       padding: 10px 20px;
       font-style: italic; }
-  main .container1 .valoracion1 {
+  .container1 .valoracion1 {
     justify-self: center;
     align-self: center;
     text-align: center;
     grid-area: valoracion1; }
-    main .container1 .valoracion1 img {
-      width: 50px;
+    .container1 .valoracion1 img {
+      width: 40px;
+      height: 50px;
       padding-bottom: 20px; }
-  main .container1 .valoracion2 {
+  .container1 .valoracion2 {
     justify-self: center;
     align-self: center;
     text-align: center;
     grid-area: valoracion2; }
-    main .container1 .valoracion2 img {
-      width: 50px;
+    .container1 .valoracion2 img {
+      width: 40px;
+      height: 50px;
       padding-bottom: 20px; }
-  main .container1 .valoracion3 {
+  .container1 .valoracion3 {
     justify-self: center;
     align-self: center;
     text-align: center;
     grid-area: valoracion3; }
-    main .container1 .valoracion3 img {
-      width: 50px;
+    .container1 .valoracion3 img {
+      width: 40px;
+      height: 50px;
       padding-bottom: 20px; }
-  main .container1 .valoracion4 {
+  .container1 .valoracion4 {
     justify-self: center;
     align-self: center;
     text-align: center;
     grid-area: valoracion4; }
-    main .container1 .valoracion4 img {
-      width: 50px;
+    .container1 .valoracion4 img {
+      width: 40px;
+      height: 50px;
       padding-bottom: 20px; }
-  main .container1 .staff {
+  .container1 .staff {
     justify-self: center;
     align-self: center;
     grid-area: staff; }
-    main .container1 .staff h2 {
+    .container1 .staff h2 {
       font-size: 2rem; }
-  main .container1 .fotostaff1 {
+  .container1 .fotostaff1 {
     justify-self: center;
     align-self: center;
     grid-area: fotostaff1; }
-    main .container1 .fotostaff1 img {
+    .container1 .fotostaff1 img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -441,11 +542,11 @@ main .container1 {
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite; }
-  main .container1 .fotostaff2 {
+  .container1 .fotostaff2 {
     justify-self: center;
     align-self: center;
     grid-area: fotostaff2; }
-    main .container1 .fotostaff2 img {
+    .container1 .fotostaff2 img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -453,11 +554,11 @@ main .container1 {
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite; }
-  main .container1 .fotostaff3 {
+  .container1 .fotostaff3 {
     justify-self: center;
     align-self: center;
     grid-area: fotostaff3; }
-    main .container1 .fotostaff3 img {
+    .container1 .fotostaff3 img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -465,11 +566,11 @@ main .container1 {
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite; }
-  main .container1 .fotostaff4 {
+  .container1 .fotostaff4 {
     justify-self: center;
     align-self: center;
     grid-area: fotostaff4; }
-    main .container1 .fotostaff4 img {
+    .container1 .fotostaff4 img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -477,11 +578,11 @@ main .container1 {
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite; }
-  main .container1 .fotostaff5 {
+  .container1 .fotostaff5 {
     justify-self: center;
     align-self: center;
     grid-area: fotostaff5; }
-    main .container1 .fotostaff5 img {
+    .container1 .fotostaff5 img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -489,11 +590,11 @@ main .container1 {
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite; }
-  main .container1 .fotostaff6 {
+  .container1 .fotostaff6 {
     justify-self: center;
     align-self: center;
     grid-area: fotostaff6; }
-    main .container1 .fotostaff6 img {
+    .container1 .fotostaff6 img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -501,11 +602,11 @@ main .container1 {
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite; }
-  main .container1 .fotostaff7 {
+  .container1 .fotostaff7 {
     justify-self: center;
     align-self: center;
     grid-area: fotostaff7; }
-    main .container1 .fotostaff7 img {
+    .container1 .fotostaff7 img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -513,11 +614,11 @@ main .container1 {
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite; }
-  main .container1 .fotostaff8 {
+  .container1 .fotostaff8 {
     justify-self: center;
     align-self: center;
     grid-area: fotostaff8; }
-    main .container1 .fotostaff8 img {
+    .container1 .fotostaff8 img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -525,75 +626,75 @@ main .container1 {
       animation-duration: 3s;
       animation-timing-function: linear;
       animation-iteration-count: infinite; }
-  main .container1 .staff1 {
+  .container1 .staff1 {
     justify-self: center;
     align-self: center;
     grid-area: staff1;
     text-align: center; }
-    main .container1 .staff1 p {
+    .container1 .staff1 p {
       font-size: 1.5rem;
       line-height: 1.2;
       padding: 10px 20px; }
-  main .container1 .staff2 {
+  .container1 .staff2 {
     justify-self: center;
     align-self: center;
     grid-area: staff2;
     text-align: center; }
-    main .container1 .staff2 p {
+    .container1 .staff2 p {
       font-size: 1.5rem;
       line-height: 1.2;
       padding: 10px 20px; }
-  main .container1 .staff3 {
+  .container1 .staff3 {
     justify-self: center;
     align-self: center;
     grid-area: staff3;
     text-align: center; }
-    main .container1 .staff3 p {
+    .container1 .staff3 p {
       font-size: 1.5rem;
       line-height: 1.2;
       padding: 10px 20px; }
-  main .container1 .staff4 {
+  .container1 .staff4 {
     justify-self: center;
     align-self: center;
     grid-area: staff4;
     text-align: center; }
-    main .container1 .staff4 p {
+    .container1 .staff4 p {
       font-size: 1.5rem;
       line-height: 1.2;
       padding: 10px 20px; }
-  main .container1 .staff5 {
+  .container1 .staff5 {
     justify-self: center;
     align-self: center;
     grid-area: staff5;
     text-align: center; }
-    main .container1 .staff5 p {
+    .container1 .staff5 p {
       font-size: 1.5rem;
       line-height: 1.2;
       padding: 10px 20px; }
-  main .container1 .staff6 {
+  .container1 .staff6 {
     justify-self: center;
     align-self: center;
     grid-area: staff6;
     text-align: center; }
-    main .container1 .staff6 p {
+    .container1 .staff6 p {
       font-size: 1.5rem;
       line-height: 1.2;
       padding: 10px 20px; }
-  main .container1 .staff7 {
+  .container1 .staff7 {
     justify-self: center;
     align-self: center;
     grid-area: staff7;
     text-align: center; }
-    main .container1 .staff7 p {
+    .container1 .staff7 p {
       font-size: 1.5rem;
       line-height: 1.2;
       padding: 10px 20px; }
-  main .container1 .staff8 {
+  .container1 .staff8 {
     justify-self: center;
     align-self: center;
     grid-area: staff8;
     text-align: center; }
-    main .container1 .staff8 p {
+    .container1 .staff8 p {
       font-size: 1.5rem;
       line-height: 1.2;
       padding: 10px 20px; }
@@ -602,7 +703,7 @@ main .container1 {
   0% {
     border: solid 5px #ff5850; }
   50% {
-    border: solid 5px #ffffff; }
+    border: solid 5px #fef600; }
   100% {
     border: solid 5px #ff5850; } }
 
@@ -610,7 +711,7 @@ main .container1 {
   0% {
     border: solid 5px #71c8f9; }
   50% {
-    border: solid 5px #ffffff; }
+    border: solid 5px #ab02ff; }
   100% {
     border: solid 5px #71c8f9; } }
 

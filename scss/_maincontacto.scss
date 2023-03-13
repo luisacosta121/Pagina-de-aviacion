@@ -1,7 +1,26 @@
-.formulario{
+.contacto{
+    .formulario{
+    background-color: #93C5FF;
+    width: 50%;
+    margin: 10px auto;
+    padding: 1px 1px;
+    filter: grayscale(100%);
+    -webkit-transition-duration: 1s;
+           -moz-transition-duration: 1s;
+            -ms-transition-duration: 1s;
+             -o-transition-duration: 1s;
+                transition-duration: 1s;
+    &:hover{
+        border-radius: 5%;
+        filter: grayscale(0%);
+        transition-duration: 1s;
+        transition-timing-function: linear;
+        
+        
+    }
     form{
         width: 75%;
-	    margin-left: 50px;
+	    margin: auto;
 	    margin-top: 50px;
 	    margin-bottom: 50px;
 	    color: #000000;
@@ -15,18 +34,95 @@
         }
         .borrar{
             margin-top: 20px;
-	        width: 70px;
-	        border-radius: 5%;
-	        background-color: #c2c2c2;
-	        font-weight: bold;
+	        width: 150px;
+            height: 50px;
+	        background-color: #940000;
+            color: #ffffff;
+            &:hover{
+                background-image: linear-gradient(200deg, #940000, #c90000, #940000, #c90000, #940000, #c90000);
+                background-size: auto 210%;
+                background-position: 0 100%;
+                transition: background-position 1s;
+            }
         }
         .enviar{
             margin-top: 20px;
-	        width: 70px;
-	        margin-left: 10px;
-	        border-radius: 5%;
-	        background-color: #c2c2c2;
-	        font-weight: bold;
+	        width: 150px;
+            height: 50px;
+	        background-color: #003b94;
+            color: #ffffff;
+            &:hover{
+                background-image: linear-gradient(200deg, #003b94, #0050c8, #003b94, #0050c8, #003b94, #0050c8);
+                background-size: auto 210%;
+                background-position: 0 100%;
+                transition: background-position 1s;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .contacto{
+        .formulario{
+        background-color: #93C5FF;
+        width: 90%;
+        margin: 5px auto;
+        padding: 1px 1px;
+        filter: grayscale(0%);
+        -webkit-transition-duration: 1s;
+               -moz-transition-duration: 1s;
+                -ms-transition-duration: 1s;
+                 -o-transition-duration: 1s;
+                    transition-duration: 1s;
+        &:hover{
+            border-radius: 0%;
+            filter: grayscale(0%);
+            transition-duration: 0s;
+            transition-timing-function: linear;
+            
+            
+        }
+        form{
+            width: 75%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: #000000;
+            .mb-3{
+                margin-top: 15px;
+                textarea{
+                    box-shadow: 5px 5px 10px #93C5FF;
+                    resize: vertical;
+                    max-height: 150px;
+                }
+            }
+            .borrar{
+                margin-top: 20px;
+                width: 150px;
+                height: 50px;
+                background-color: #940000;
+                color: #ffffff;
+                &:hover{
+                    background-image: none;
+                    background-size: auto 210%;
+                    background-position: 0 100%;
+                    transition: background-position 0s;
+                }
+            }
+            .enviar{
+                margin-top: 20px;
+                width: 150px;
+                height: 50px;
+                background-color: #003b94;
+                color: #ffffff;
+                &:hover{
+                    background-image: none;
+                    background-size: auto 210%;
+                    background-position: 0 100%;
+                    transition: background-position 0s;
+                    }
+                }
+            }
         }
     }
 }

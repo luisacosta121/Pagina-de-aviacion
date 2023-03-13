@@ -1,4 +1,4 @@
-main{
+
     .container1{  
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -155,7 +155,8 @@ main{
                 text-align: center;
                 grid-area: valoracion1;
                 img{
-                    width: 50px;
+                    width: 40px;
+                    height: 50px;
 	                padding-bottom: 20px;
                 }
             }
@@ -165,7 +166,8 @@ main{
                 text-align: center;
                 grid-area: valoracion2;
                 img{
-                    width: 50px;
+                    width: 40px;
+                    height: 50px;
 	                padding-bottom: 20px;
                 }
             }
@@ -175,7 +177,8 @@ main{
                 text-align: center;
                 grid-area: valoracion3;
                 img{
-                    width: 50px;
+                    width: 40px;
+                    height: 50px;
 	                padding-bottom: 20px;
                 }
             }
@@ -185,7 +188,8 @@ main{
                 text-align: center;
                 grid-area: valoracion4;
                 img{
-                    width: 50px;
+                    width: 40px;
+                    height: 50px;
 	                padding-bottom: 20px;
                 }
             }
@@ -398,16 +402,15 @@ main{
                 }
             }
         }
-    }
 
     @keyframes fotostaff {
         0% {border: solid 5px #ff5850;}
-        50% {border: solid 5px #ffffff;}
+        50% {border: solid 5px #fef600;}
         100% {border: solid 5px #ff5850;}
     }
     @keyframes fototestimonio {
         0% {border: solid 5px #71c8f9;}
-        50% {border: solid 5px #ffffff;}
+        50% {border: solid 5px #ab02ff;}
         100% {border: solid 5px #71c8f9;}
     }
     @media screen and (max-width: 768px){
