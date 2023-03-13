@@ -367,7 +367,15 @@ img {
     grid-template-areas: "fotoflota1" "fichaflota1" "fotoflota2" "fichaflota2" "fotoflota3" "fichaflota3" "fotoflota4" "fichaflota4";
     justify-content: stretch;
     justify-items: center;
-    align-items: center; } }
+    align-items: center; }
+    .fichatecnica .containerfichatecnica .fotoflota1 img {
+      width: 100%; }
+    .fichatecnica .containerfichatecnica .fotoflota2 img {
+      width: 100%; }
+    .fichatecnica .containerfichatecnica .fotoflota3 img {
+      width: 100%; }
+    .fichatecnica .containerfichatecnica .fotoflota4 img {
+      width: 100%; } }
 
 .container1 {
   display: grid;
