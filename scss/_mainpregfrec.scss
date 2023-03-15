@@ -8,8 +8,16 @@
             .accordion-button:not(.collapsed){
                 background-color: #ffffff;
             }
+            .accordion-button{
+                font-size: 1.2rem;
+                &:hover{
+                    font-weight: bold;
+                    color: #aa00ff;
+                }
+            }
         }
         .accordion-body{
             color: #aa00ff;
+            font-size: 1.2rem;
         }
     }

@@ -6,18 +6,16 @@
     padding: 1px 1px;
     filter: grayscale(100%);
     -webkit-transition-duration: 1s;
-           -moz-transition-duration: 1s;
-            -ms-transition-duration: 1s;
-             -o-transition-duration: 1s;
-                transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
     &:hover{
         border-radius: 5%;
         filter: grayscale(0%);
         transition-duration: 1s;
         transition-timing-function: linear;
-        
-        
-    }
+        }
     form{
         width: 75%;
 	    margin: auto;
@@ -32,7 +30,7 @@
                 max-height: 150px;
             }
         }
-        .borrar{
+    .borrar{    
             margin-top: 20px;
 	        width: 150px;
             height: 50px;
@@ -43,19 +41,19 @@
                 background-size: auto 210%;
                 background-position: 0 100%;
                 transition: background-position 1s;
-            }
+                }
         }
-        .enviar{
+    .enviar{
             margin-top: 20px;
 	        width: 150px;
             height: 50px;
 	        background-color: #003b94;
             color: #ffffff;
             &:hover{
-                background-image: linear-gradient(200deg, #003b94, #0050c8, #003b94, #0050c8, #003b94, #0050c8);
-                background-size: auto 210%;
-                background-position: 0 100%;
-                transition: background-position 1s;
+            background-image: linear-gradient(200deg, #003b94, #0050c8, #003b94, #0050c8, #003b94, #0050c8);
+            background-size: auto 210%;
+            background-position: 0 100%;
+            transition: background-position 1s;
                 }
             }
         }
@@ -64,24 +62,21 @@
 @media screen and (max-width: 768px){
     .contacto{
         .formulario{
-        background-color: #93C5FF;
         width: 90%;
         margin: 5px auto;
         padding: 1px 1px;
         filter: grayscale(0%);
         -webkit-transition-duration: 1s;
-               -moz-transition-duration: 1s;
-                -ms-transition-duration: 1s;
-                 -o-transition-duration: 1s;
-                    transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        -ms-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s;
         &:hover{
             border-radius: 0%;
             filter: grayscale(0%);
             transition-duration: 0s;
             transition-timing-function: linear;
-            
-            
-        }
+            }
         form{
             width: 75%;
             margin: auto;

@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/estilos.css">
 	<link rel="icon" href="../assets/favicon.jpg">
 </head>
@@ -34,28 +35,28 @@
 			<img src="../assets/fondo.jpg" class="imagen" id="subir" alt="fondo">
 		<div class="flota">
 			<div class="card" style="width: 22rem;">
- 				 	<img src="../assets/flota1.jpg" class="card-img-top" alt="flota">
+ 				 	<img src="../assets/flota1.jpg" class="card-img-top" alt="flota" title="">
   				<div class="card-body">
     				<h5 class="card-title">Cessna Citation CJ1 Model 525</h5>
     				<a href="#fotoflota1" class="btn btn-primary">Ficha Técnica</a>
   				</div>
 			</div>
 			<div class="card" style="width: 22rem;">
- 				 	<img src="../assets/flota2.jpg" class="card-img-top" alt="flota">
+ 				 	<img src="../assets/flota2.jpg" class="card-img-top" alt="flota" title="">
   				<div class="card-body">
     				<h5 class="card-title">Cessna Citation M2 Gen2</h5>
     				<a href="#fotoflota2" class="btn btn-primary">Ficha Técnica</a>
   			</div>
 			</div>
 			<div class="card" style="width: 22rem;">
- 				 	<img src="../assets/flota3.jpg" class="card-img-top" alt="flota">
+ 				 	<img src="../assets/flota3.jpg" class="card-img-top" alt="flota" title="">
   				<div class="card-body">
     				<h5 class="card-title">Embraer Legacy 600</h5>
     				<a href="#fotoflota3" class="btn btn-primary">Ficha Técnica</a>
   			</div>
 			</div>
 			<div class="card" style="width: 22rem;">
- 				 	<img src="../assets/flota4.jpg" class="card-img-top" alt="flota">
+ 				 	<img src="../assets/flota4.jpg" class="card-img-top" alt="flota" title="">
   				<div class="card-body">
     				<h5 class="card-title">Cessna 150</h5>
     				<a href="#fotoflota4" class="btn btn-primary">Ficha Técnica</a>
@@ -64,32 +65,32 @@
 		</div>
 	<section class="fichatecnica">
 		<div class="containerfichatecnica">
-  				<div class="fotoflota1">
+  				<div class="fotoflota1" data-aos="fade-right">
   					<img src="../assets/flota1.jpg" id="fotoflota1" alt="flota1" title="Cessna Citation CJ1 Model 525">
   				</div>
-				<div class="fichaflota1">
+				<div class="fichaflota1" data-aos="fade-left">
 					<h2>Cessna Citation CJ1 Model 525</h2>
 					<p>El Cessna Citation CJ1, es un avión con capacidad para 4 pasajeros. Dos motores de reacción Williams International FJ44-1AP. Velocidad de crucero de 720 Kilómetros/hora.</p>
 				</div>
-				<div class="fichaflota2">
+				<div class="fichaflota2" data-aos="fade-right">
 					<h2>Cessna Citation M2 Gen2</h2>
 					<p>El Citation M2 Gen2 cuenta con una autonomía de 2.870 km y una velocidad de crucero máxima de 404 kt. Su planta propulsiva son dos Williams FJ44 que le permiten ascender a 41.000 pies en 24 minutos y operar desde pistas de 975 metros. Está certificado para un solo piloto, el cual dispone de aviónica Garmin G3000 actualizada con control táctil.</p>
 				</div>
-				<div class="fotoflota2">
+				<div class="fotoflota2" data-aos="fade-left">
 					<img src="../assets/flota2.jpg" id="fotoflota2" alt="flota2" title="Cessna Citation M2 Gen2">
 				</div>
-				<div class="fotoflota3">
+				<div class="fotoflota3" data-aos="fade-right">
 					<img src="../assets/flota3.jpg" id="fotoflota3" alt="flota3" title="Embraer Legacy 600">
 				</div>
-				<div class="fichaflota3">
+				<div class="fichaflota3" data-aos="fade-left">
 					<h2>Embraer Legacy 600</h2>
 					<p>El Embraer Legacy es un avión ejecutivo derivado de la familia de reactores comerciales ERJ-145 tipo Jet VIP. En concreto, el Legacy está basado en el modelo acortado ERJ-135, y se diferencia de él, por su depósito extra de combustible que incrementa su alcance y por las alas con winglets, similares a las del ERJ-145XR. Lanzado en 2000 en la Exposición Aérea de Farnborough, el Legacy es capaz de transportar 16 pasajeros de forma cómoda a 6019 km de distancia.</p>
 				</div>
-				<div class="fichaflota4">
+				<div class="fichaflota4" data-aos="fade-right">
 					<h2>Cessna 150</h2>
 					<p>El Cessna 150 es un avión biplaza de propósito general equipado con tren de aterrizaje triciclo fijo y ala alta, diseñado originalmente para realizar labores de entrenamiento, turismo y uso personal.</p>
 				</div>
-				<div class="fotoflota4">
+				<div class="fotoflota4" data-aos="fade-left">
 					<img src="../assets/flota4.jpg" id="fotoflota4" alt="flota4" title="Cessna 150">
 				</div>
 		</div>
@@ -126,18 +127,20 @@
 			<h3>Nuestras Redes</h3>
 			<div class="iconredes">
 				<a href="https://www.instagram.com" target="blank">
-					<img src="../assets/instagram.png" class="instagram" alt="instagram">
+					<img src="../assets/instagram.png" class="instagram" alt="instagram" title="instagram">
 				</a>
 				<a href="https://www.facebook.com" target="blank">
-					<img src="../assets/facebook.png" class="facebook" alt="facebook">
+					<img src="../assets/facebook.png" class="facebook" alt="facebook" title="facebook">
 				</a>
 				<a href="https://www.twitter.com" target="blank">
-					<img src="../assets/twitter.png" class="twitter" alt="twitter">
+					<img src="../assets/twitter.png" class="twitter" alt="twitter" title="twitter">
 				</a>
 			</div>
 		</div>	
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script> AOS.init({   easing: 'ease-out-back',duration: 2000});</script>
 </body>
 </html>
