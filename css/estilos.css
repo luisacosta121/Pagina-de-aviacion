@@ -383,6 +383,7 @@ footer {
     box-shadow: none; } }
 
 .container1 {
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(18, 0.1fr);
@@ -761,7 +762,8 @@ footer {
     justify-content: stretch;
     justify-items: stretch;
     align-items: stretch;
-    grid-template-areas: "fotoavion 		fotoavion" "parrafosn		parrafosn" "testimonios 	testimonios" "fototestimonio1 fototestimonio2" "testimonio1 	testimonio2" "valoracion1 	valoracion2" "fototestimonio3 fototestimonio4" "testimonio3 	testimonio4" "valoracion3 	valoracion4" "staff			staff" "fotostaff1 	fotostaff2" "staff1 		staff2" "fotostaff3 	fotostaff4" "staff3 		staff4" "fotostaff5 	fotostaff6" "staff5 		staff6" "fotostaff7 	fotostaff8" "staff7 		staff8"; } }
+    grid-template-areas: "fotoavion 		fotoavion" "parrafosn		parrafosn" "testimonios 	testimonios" "fototestimonio1 fototestimonio2" "testimonio1 	testimonio2" "valoracion1 	valoracion2" "fototestimonio3 fototestimonio4" "testimonio3 	testimonio4" "valoracion3 	valoracion4" "staff			staff" "fotostaff1 	fotostaff2" "staff1 		staff2" "fotostaff3 	fotostaff4" "staff3 		staff4" "fotostaff5 	fotostaff6" "staff5 		staff6" "fotostaff7 	fotostaff8" "staff7 		staff8";
+    overflow: hidden; } }
 
 @media screen and (max-width: 425px) {
   main .container1 {
