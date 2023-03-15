@@ -42,6 +42,7 @@
 	            justify-self: center;
 	            align-self: center;
 	            grid-area: parrafosn;
+                text-align: center;
             }
             .testimonios{
                 justify-self: center;
@@ -56,8 +57,8 @@
                 align-self: center;
                 grid-area: fototestimonio1;
                 img{
-                    width: 250px;
-	                height: 250px;
+                    width: 12rem;
+	                height: 12rem;
 	                border-radius: 50%;
 	                animation-name: fototestimonio;
 	                animation-duration: 3s;
@@ -70,8 +71,8 @@
                 align-self: center;
                 grid-area: fototestimonio2;
                 img{
-                    width: 250px;
-	                height: 250px;
+                    width: 12rem;
+	                height: 12rem;
 	                border-radius: 50%;
 	                animation-name: fototestimonio;
 	                animation-duration: 3s;
@@ -84,8 +85,8 @@
                 align-self: center;
                 grid-area: fototestimonio3;
                 img{
-                    width: 250px;
-	                height: 250px;
+                    width: 12rem;
+	                height: 12rem;
 	                border-radius: 50%;
 	                animation-name: fototestimonio;
 	                animation-duration: 3s;
@@ -98,8 +99,8 @@
                 align-self: center;
                 grid-area: fototestimonio4;
                 img{
-                    width: 250px;
-	                height: 250px;
+                    width: 12rem;
+	                height: 12rem;
 	                border-radius: 50%;
 	                animation-name: fototestimonio;
 	                animation-duration: 3s;
@@ -228,8 +229,8 @@
                 align-self: center;
                 grid-area: fotostaff1;
                 img{
-                    width: 200px;
-	                height: 200px;
+                    width: 12rem;
+	                height: 12rem;
 	                border-radius: 50%;
 	                animation-name: fotostaff;
 	                animation-duration: 3s;
@@ -242,8 +243,8 @@
                 align-self: center;
                 grid-area: fotostaff2;
                 img{
-                    width: 200px;
-	                height: 200px;
+                    width: 12rem;
+	                height: 12rem;
 	                border-radius: 50%;
 	                animation-name: fotostaff;
 	                animation-duration: 3s;
@@ -256,8 +257,8 @@
                 align-self: center;
                 grid-area: fotostaff3;
                 img{
-                    width: 200px;
-	                height: 200px;
+                    width: 12rem;
+	                height: 12rem;
 	                border-radius: 50%;
 	                animation-name: fotostaff;
 	                animation-duration: 3s;
@@ -270,8 +271,8 @@
                 align-self: center;
                 grid-area: fotostaff4;
                 img{
-                    width: 200px;
-	                height: 200px;
+                    width: 12rem;
+	                height: 12rem;
 	                border-radius: 50%;
 	                animation-name: fotostaff;
 	                animation-duration: 3s;
@@ -284,8 +285,8 @@
                 align-self: center;
                 grid-area: fotostaff5;
                 img{
-                    width: 200px;
-	                height: 200px;
+                    width: 12rem;
+	                height: 12rem;
 	                border-radius: 50%;
 	                animation-name: fotostaff;
 	                animation-duration: 3s;
@@ -298,8 +299,8 @@
                 align-self: center;
                 grid-area: fotostaff6;
                 img{
-                    width: 200px;
-	                height: 200px;
+                    width: 12rem;
+	                height: 12rem;
 	                border-radius: 50%;
 	                animation-name: fotostaff;
 	                animation-duration: 3s;
@@ -312,8 +313,8 @@
                 align-self: center;
                 grid-area: fotostaff7;
                 img{
-                    width: 200px;
-	                height: 200px;
+                    width: 12rem;
+	                height: 12rem;
 	                border-radius: 50%;
 	                animation-name: fotostaff;
 	                animation-duration: 3s;
@@ -326,8 +327,8 @@
                 align-self: center;
                 grid-area: fotostaff8;
                 img{
-                    width: 200px;
-	                height: 200px;
+                    width: 12rem;
+	                height: 12rem;
 	                border-radius: 50%;
 	                animation-name: fotostaff;
 	                animation-duration: 3s;
@@ -438,35 +439,85 @@
     }
     @media screen and (max-width: 768px){
         main{
-            .container1 {  display: grid;
+            .container1{
+                display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: repeat(18, 0.1fr);
-               grid-auto-columns: 1fr;
+                grid-auto-columns: 1fr;
                 grid-auto-rows: 1fr;
-               gap: 10px 10px;
-               grid-auto-flow: row;
+                gap: 10px 10px;
+                grid-auto-flow: row;
                 justify-content: stretch;
                 justify-items: stretch;
                 align-items: stretch;
                 grid-template-areas:
-          "fotoavion 		fotoavion"
-          "parrafosn		parrafosn"
-          "testimonios 	testimonios"
-          "fototestimonio1 fototestimonio2"
-          "testimonio1 	testimonio2"
-          "valoracion1 	valoracion2"
-          "fototestimonio3 fototestimonio4"
-          "testimonio3 	testimonio4"
-          "valoracion3 	valoracion4"
-          "staff			staff"
-          "fotostaff1 	fotostaff2"
-          "staff1 		staff2"
-          "fotostaff3 	fotostaff4"
-          "staff3 		staff4"
-          "fotostaff5 	fotostaff6"
-          "staff5 		staff6"
-          "fotostaff7 	fotostaff8"
-          "staff7 		staff8";
-      }
+                "fotoavion 		fotoavion"
+                "parrafosn		parrafosn"
+                "testimonios 	testimonios"
+                "fototestimonio1 fototestimonio2"
+                "testimonio1 	testimonio2"
+                "valoracion1 	valoracion2"
+                "fototestimonio3 fototestimonio4"
+                "testimonio3 	testimonio4"
+                "valoracion3 	valoracion4"
+                "staff			staff"
+                "fotostaff1 	fotostaff2"
+                "staff1 		staff2"
+                "fotostaff3 	fotostaff4"
+                "staff3 		staff4"
+                "fotostaff5 	fotostaff6"
+                "staff5 		staff6"
+                "fotostaff7 	fotostaff8"
+                "staff7 		staff8";
         }
     }
+}
+@media screen and (max-width: 425px){
+    main{
+        .container1{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(32, 0.1fr);
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 10px 10px;
+            grid-auto-flow: row;
+            justify-content: stretch;
+            justify-items: stretch;
+            align-items: stretch;
+            grid-template-areas:
+            "fotoavion"
+            "parrafosn"
+            "testimonios"
+            "fototestimonio1"
+            "testimonio1"
+            "valoracion1"
+            "fototestimonio2"
+            "testimonio2"
+            "valoracion2"
+            "fototestimonio3"
+            "testimonio3"
+            "valoracion3"
+            "fototestimonio4"
+            "testimonio4"
+            "valoracion4"
+            "staff"
+            "fotostaff1" 	
+            "staff1"
+            "fotostaff2"
+            "staff2"
+            "fotostaff3"
+            "staff3"
+            "fotostaff4"
+            "staff4"
+            "fotostaff5"	
+            "staff5"
+            "fotostaff6"
+            "staff6"
+            "fotostaff7" 	
+            "staff7"
+            "fotostaff8"
+            "staff8";
+        }
+    }
+}
