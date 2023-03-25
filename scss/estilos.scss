@@ -7,3 +7,41 @@
 @import "mainaerodromo";
 @import "mainflota";
 @import "mainindex";
+
+
+    .notfound{
+        width: 100%;
+        margin: auto;
+        .notfoundp{
+            text-align: center;
+            font-size: 2rem;
+        }
+        .landing {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: mover 5s ease-in-out forwards;
+            animation-iteration-count: infinite;
+            padding-right: 50%;
+            img{
+                width: 100%;
+                aspect-ratio: 5/3;
+            }
+          }
+          .pista img{
+            width: 100%;
+            aspect-ratio: 3/1;
+          }
+    }
+
+@keyframes mover {
+    0% {
+      transform: translate(0, 0); /* posición inicial */
+    }
+    50% {
+      transform: translate(200px, 200px); /* diagonal hacia abajo a la derecha */
+    }
+    100% {
+      transform: translate(130%, 200px); /* recto hacia la derecha */
+    }
+  }

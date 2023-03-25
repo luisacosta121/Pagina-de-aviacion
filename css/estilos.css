@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -779,3 +780,34 @@ footer {
     align-items: stretch;
     grid-template-areas: "fotoavion" "parrafosn" "testimonios" "fototestimonio1" "testimonio1" "valoracion1" "fototestimonio2" "testimonio2" "valoracion2" "fototestimonio3" "testimonio3" "valoracion3" "fototestimonio4" "testimonio4" "valoracion4" "staff" "fotostaff1" 	 "staff1" "fotostaff2" "staff2" "fotostaff3" "staff3" "fotostaff4" "staff4" "fotostaff5"	 "staff5" "fotostaff6" "staff6" "fotostaff7" 	 "staff7" "fotostaff8" "staff8";
     overflow: hidden; } }
+
+.notfound {
+  width: 100%;
+  margin: auto; }
+  .notfound .notfoundp {
+    text-align: center;
+    font-size: 2rem; }
+  .notfound .landing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: mover 5s ease-in-out forwards;
+    animation-iteration-count: infinite;
+    padding-right: 50%; }
+    .notfound .landing img {
+      width: 100%;
+      aspect-ratio: 5/3; }
+  .notfound .pista img {
+    width: 100%;
+    aspect-ratio: 3/1; }
+
+@keyframes mover {
+  0% {
+    transform: translate(0, 0);
+    /* posición inicial */ }
+  50% {
+    transform: translate(200px, 200px);
+    /* diagonal hacia abajo a la derecha */ }
+  100% {
+    transform: translate(130%, 200px);
+    /* recto hacia la derecha */ } }
