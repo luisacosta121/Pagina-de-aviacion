@@ -86,16 +86,25 @@ footer{
             .instagram{
                 width: 25px;
                 height: 25px;
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
             .facebook{
                 width: 25px;
                 height: 25px;
 	            margin-left: 10px;
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
             .twitter{
                 width: 25px;
                 height: 25px;
 	            margin-left: 10px;
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
         }
     }

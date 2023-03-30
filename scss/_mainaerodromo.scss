@@ -1,8 +1,9 @@
 .parrafoaerodromo{
     width: 85%;
 	line-height: 1.5;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	margin: 25px auto;
+    text-align: center;
     }
 .parrafoaerodromoresponsive{
         display: none;
@@ -46,6 +47,7 @@
 		    line-height: 1.5;
 		    display: block;
 		    width: 90%;
+            text-align: center;
         }
         .containeraerodromo{
             display: none;

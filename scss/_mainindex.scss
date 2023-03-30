@@ -2,7 +2,7 @@
             overflow: hidden;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(18, 0.1fr);
+            grid-template-rows: repeat(19, 0.1fr);
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 10px 10px;
@@ -12,6 +12,7 @@
             align-items: stretch;
             grid-template-areas:
             "fotoavion   	 fotoavion"
+            "tituloindex tituloindex"
             "parrafosn 		 parrafosn"
             "testimonios 	 testimonios"
             "fototestimonio1 fototestimonio2"
@@ -29,16 +30,27 @@
             "staff5 		 staff6" 	
             "fotostaff7 	 fotostaff8"
             "staff7 		 staff8";
+
             .fotoavion{
                 grid-area: fotoavion;
 	            justify-self: stretch;
   	            align-self: stretch;
   	            width: 100%;
             }
-            .parrafosn{
+            .tituloindex{
                 width: 85%;
 	            line-height: 1.5;
 	            font-size: 1.5rem;
+	            margin: auto;
+	            justify-self: center;
+	            align-self: center;
+	            grid-area: tituloindex;
+                text-align: center;
+            }
+            .parrafosn{
+                width: 85%;
+	            line-height: 1.5;
+	            font-size: 1.2rem   ;
 	            margin: 25px auto;
 	            justify-self: center;
 	            align-self: center;
@@ -60,7 +72,7 @@
                 img{
                     width: 12rem;
 	                height: 12rem;
-	                border-radius: 50%;
+	                border-radius: 100%;
 	                animation-name: fototestimonio;
 	                animation-duration: 3s;
 	                animation-timing-function: linear;
@@ -115,7 +127,7 @@
                 text-align: center;
                 grid-area: testimonio1;
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
 	                line-height: 1.2;
 	                padding: 10px 20px;
 	                font-style: italic;
@@ -127,7 +139,7 @@
                 text-align: center;
                 grid-area: testimonio2;
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
 	                line-height: 1.2;
 	                padding: 10px 20px;
 	                font-style: italic;
@@ -139,7 +151,7 @@
                 text-align: center;
                 grid-area: testimonio3;
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
 	                line-height: 1.2;
 	                padding: 10px 20px;
 	                font-style: italic;
@@ -151,7 +163,7 @@
                 text-align: center;
                 grid-area: testimonio4;
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
 	                line-height: 1.2;
 	                padding: 10px 20px;
 	                font-style: italic;
@@ -168,7 +180,7 @@
 	                padding-bottom: 20px;
                 }
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     font-weight: bold;
                 }
             }
@@ -183,7 +195,7 @@
 	                padding-bottom: 20px;
                 }
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     font-weight: bold;
                 }
             }
@@ -198,7 +210,7 @@
 	                padding-bottom: 20px;
                 }
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     font-weight: bold;
                 }
             }
@@ -213,7 +225,7 @@
 	                padding-bottom: 20px;
                 }
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     font-weight: bold;
                 }
             }
@@ -260,7 +272,7 @@
                 img{
                     width: 12rem;
 	                height: 12rem;
-	                border-radius: 50%;
+	                border-radius: 100%;
 	                animation-name: fotostaff;
 	                animation-duration: 3s;
 	                animation-timing-function: linear;
@@ -274,7 +286,7 @@
                 img{
                     width: 12rem;
 	                height: 12rem;
-	                border-radius: 50%;
+	                border-radius: 100%;
 	                animation-name: fotostaff;
 	                animation-duration: 3s;
 	                animation-timing-function: linear;
@@ -344,7 +356,7 @@
                 grid-area: staff1;
                 text-align: center;
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     line-height: 1.2;
                     padding: 10px 20px;  
                 }
@@ -355,7 +367,7 @@
                 grid-area: staff2;
                 text-align: center;
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     line-height: 1.2;
                     padding: 10px 20px;  
                 }
@@ -366,7 +378,7 @@
                 grid-area: staff3;
                 text-align: center;
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     line-height: 1.2;
                     padding: 10px 20px;  
                 }
@@ -377,7 +389,7 @@
                 grid-area: staff4;
                 text-align: center;
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     line-height: 1.2;
                     padding: 10px 20px;  
                 }
@@ -388,7 +400,7 @@
                 grid-area: staff5;
                 text-align: center;
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     line-height: 1.2;
                     padding: 10px 20px;  
                 }
@@ -399,7 +411,7 @@
                 grid-area: staff6;
                 text-align: center;
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     line-height: 1.2;
                     padding: 10px 20px;  
                 }
@@ -410,7 +422,7 @@
                 grid-area: staff7;
                 text-align: center;
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     line-height: 1.2;
                     padding: 10px 20px;  
                 }
@@ -421,7 +433,7 @@
                 grid-area: staff8;
                 text-align: center;
                 p{
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     line-height: 1.2;
                     padding: 10px 20px;  
                 }
@@ -443,7 +455,7 @@
             .container1{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-template-rows: repeat(18, 0.1fr);
+                grid-template-rows: repeat(19, 0.1fr);
                 grid-auto-columns: 1fr;
                 grid-auto-rows: 1fr;
                 gap: 10px 10px;
@@ -453,6 +465,7 @@
                 align-items: stretch;
                 grid-template-areas:
                 "fotoavion 		fotoavion"
+                "tituloindex    tituloindex"
                 "parrafosn		parrafosn"
                 "testimonios 	testimonios"
                 "fototestimonio1 fototestimonio2"
@@ -479,7 +492,7 @@
         .container1{
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(32, 0.1fr);
+            grid-template-rows: repeat(33, 0.1fr);
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 10px 10px;
@@ -489,6 +502,7 @@
             align-items: stretch;
             grid-template-areas:
             "fotoavion"
+            "tituloindex"
             "parrafosn"
             "testimonios"
             "fototestimonio1"

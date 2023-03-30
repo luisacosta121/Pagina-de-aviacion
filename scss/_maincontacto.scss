@@ -26,7 +26,7 @@
             margin-top: 15px;
             textarea{
 	            box-shadow: 5px 5px 10px #93C5FF;
-	            resize: vertical;
+	            resize: none;
                 max-height: 150px;
             }
         }
@@ -87,7 +87,7 @@
                 margin-top: 15px;
                 textarea{
                     box-shadow: 5px 5px 10px #93C5FF;
-                    resize: vertical;
+                    resize: none;
                     max-height: 150px;
                 }
             }

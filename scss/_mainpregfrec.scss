@@ -1,6 +1,8 @@
 
     .accordion{
         width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
         .accordion-item{
             border: none;
 	        margin-top: 15px;
@@ -12,12 +14,19 @@
                 font-size: 1.2rem;
                 &:hover{
                     font-weight: bold;
-                    color: #aa00ff;
+                    color: #000000;
                 }
             }
         }
         .accordion-body{
-            color: #aa00ff;
+            color: #8a8a8a;
             font-size: 1.2rem;
         }
     }
+    @media screen and (max-width: 768px){
+        .accordion{
+            width: 100%;
+            padding-left: 0px;
+            padding-right: 0px;
+            }
+        }
